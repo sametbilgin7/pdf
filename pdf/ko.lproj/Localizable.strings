@@ -1,0 +1,463 @@
+/* Korean Localization */
+
+/* Common */
+"OK" = "확인";
+"Cancel" = "취소";
+"Save" = "저장";
+"Delete" = "삭제";
+"Edit" = "편집";
+"Share" = "공유";
+"Close" = "닫기";
+"Done" = "완료";
+"Back" = "뒤로";
+"Next" = "다음";
+"Previous" = "이전";
+"Settings" = "설정";
+"Library" = "라이브러리";
+"Scan" = "스캔";
+"Tools" = "도구";
+
+/* Home View */
+"Modern PDF Scanner" = "모던 PDF 스캐너";
+"Scan documents and convert them to PDF" = "문서를 스캔하여 PDF로 변환";
+"Scan Document" = "문서 스캔";
+"Scanned Pages" = "스캔된 페이지";
+"page" = "페이지";
+"pages" = "페이지";
+"Create PDF" = "PDF 생성";
+"Creating PDF..." = "PDF 생성 중...";
+"Clear All" = "모두 지우기";
+
+/* Settings View */
+"Appearance" = "외관";
+"Light" = "라이트";
+"Dark" = "다크";
+"System" = "시스템";
+"Always use light appearance" = "항상 라이트 외관 사용";
+"Always use dark appearance" = "항상 다크 외관 사용";
+"Follow system setting" = "시스템 설정 따르기";
+
+"Scanning Settings" = "스캔 설정";
+"Scan Quality" = "스캔 품질";
+"High quality means larger file size" = "고품질은 더 큰 파일 크기를 의미합니다";
+"Low" = "낮음";
+"Medium" = "중간";
+"High" = "높음";
+"Auto Enhancement" = "자동 향상";
+"Automatically enhance images" = "이미지를 자동으로 향상";
+"Auto Save" = "자동 저장";
+"Automatically save scanned documents" = "스캔된 문서를 자동으로 저장";
+
+"OCR Settings" = "OCR 설정";
+"OCR Language" = "OCR 언어";
+"Select language for text recognition" = "텍스트 인식을 위한 언어 선택";
+"Automatic" = "자동";
+"Turkish" = "터키어";
+"English" = "영어";
+"Spanish" = "스페인어";
+"French" = "프랑스어";
+"German" = "독일어";
+
+"Storage" = "저장소";
+"Storage Usage" = "저장소 사용량";
+"Used space" = "사용된 공간";
+"Details" = "세부사항";
+
+"App Preferences" = "앱 설정";
+"Haptic Feedback" = "햅틱 피드백";
+"Tactile feedback" = "촉각 피드백";
+"Show Tutorial" = "튜토리얼 표시";
+"Show tutorial on first use" = "첫 사용 시 튜토리얼 표시";
+
+"Support & Legal" = "지원 및 법적";
+"About" = "정보";
+"App information" = "앱 정보";
+"Privacy Policy" = "개인정보 보호정책";
+"Data privacy and protection" = "데이터 개인정보 보호";
+"Terms of Use" = "이용약관";
+"Service terms and conditions" = "서비스 이용약관";
+"Rate App" = "앱 평가";
+"Rate on App Store" = "App Store에서 평가";
+
+/* About View */
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "고급 OCR 기능을 갖춘 전문 문서 스캔 및 PDF 생성 앱.";
+"© 2025 Modern PDF Scanner" = "© 2025 모던 PDF 스캐너";
+"Made with ❤️ in Turkey" = "터키에서 ❤️와 함께 제작";
+
+/* Privacy View */
+"Modern PDF Scanner is designed to protect user privacy." = "모던 PDF 스캐너는 사용자 개인정보를 보호하도록 설계되었습니다.";
+"Data Collection" = "데이터 수집";
+"Our app stores your scanned documents on your device and does not share them with any third parties." = "저희 앱은 스캔된 문서를 기기에 저장하며 제3자와 공유하지 않습니다.";
+"Permissions" = "권한";
+"Camera and Photo Library access is used only for document scanning and saving operations." = "카메라 및 사진 라이브러리 접근은 문서 스캔 및 저장 작업에만 사용됩니다.";
+
+/* Terms View */
+"By using this app, you agree to the following terms." = "이 앱을 사용함으로써 다음 약관에 동의합니다.";
+"Usage Terms" = "이용약관";
+"• Use the app for legal purposes\n• Do not violate copyright\n• Do not misuse the app" = "• 앱을 합법적인 목적으로 사용\n• 저작권을 위반하지 않음\n• 앱을 오용하지 않음";
+
+/* Storage Details View */
+"Storage Usage" = "저장소 사용량";
+"MB used" = "사용된 MB";
+"PDF Files" = "PDF 파일";
+"Image Cache" = "이미지 캐시";
+
+/* Language Selection */
+"Language" = "언어";
+"Select App Language" = "앱 언어 선택";
+"Turkish" = "터키어";
+"English" = "영어";
+
+/* Settings View - App Settings */
+"App Settings" = "앱 설정";
+"Notifications" = "알림";
+"Dark Mode" = "다크 모드";
+"Language" = "언어";
+"Haptic Feedback" = "햅틱 피드백";
+"Show Tutorial" = "튜토리얼 표시";
+
+/* Settings View - PDF Scanning Settings */
+"PDF Scanning Settings" = "PDF 스캔 설정";
+"OCR Language" = "OCR 언어";
+"Scan Quality" = "스캔 품질";
+"Auto Enhancement" = "자동 향상";
+"Auto OCR" = "자동 OCR";
+"Edge Detection" = "가장자리 감지";
+"Auto Rotate" = "자동 회전";
+"Auto Save" = "자동 저장";
+
+/* Settings View - PDF Settings */
+"PDF Settings" = "PDF 설정";
+"PDF Compression" = "PDF 압축";
+"Document Format" = "문서 형식";
+"Batch Scanning" = "일괄 스캔";
+
+/* Settings View - Cloud & Storage */
+"Cloud & Storage" = "클라우드 및 저장소";
+"Cloud Sync" = "클라우드 동기화";
+"Storage Usage" = "저장소 사용량";
+
+/* Settings View - About */
+"About" = "정보";
+"Rate App" = "앱 평가";
+"Feedback" = "피드백";
+
+/* Settings View - Legal */
+"Legal" = "법적";
+"Privacy Policy" = "개인정보 보호정책";
+"Terms of Use" = "이용약관";
+
+/* Language Picker */
+"Language" = "언어";
+"Language Description" = "나중에 이를 변경할 수 있습니다. 선택한 언어로 콘텐츠를 볼 수 있습니다!";
+"Close" = "닫기";
+
+/* Premium Card */
+"Go Premium" = "프리미엄으로 이동";
+"Premium Description" = "무제한 스캔 및 고급 기능";
+"Premium Active" = "프리미엄 활성";
+"Premium Active Description" = "모든 프리미엄 기능이 활성화됨";
+"PREMIUM" = "프리미엄";
+
+/* About View */
+"About" = "정보";
+"Version" = "버전";
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "고급 OCR 기능을 갖춘 전문 문서 스캔 및 PDF 생성 앱.";
+"© 2025 Modern PDF Scanner" = "© 2025 모던 PDF 스캐너";
+"Made with ❤️ in Turkey" = "터키에서 ❤️와 함께 제작";
+
+/* Privacy View */
+"Privacy Policy" = "개인정보 보호정책";
+"Privacy Description" = "아래 버튼을 클릭하여 웹사이트에서 개인정보 보호정책을 확인하세요.";
+"View Privacy Policy" = "개인정보 보호정책 보기";
+
+/* Terms View */
+"Terms of Use" = "이용약관";
+"Terms Description" = "아래 버튼을 클릭하여 Apple의 표준 EULA를 확인하세요.";
+"View Terms of Use" = "이용약관 보기";
+
+/* Storage Details View */
+"Storage Usage" = "저장소 사용량";
+"MB used" = "사용된 MB";
+"PDF Files" = "PDF 파일";
+"Image Cache" = "이미지 캐시";
+
+/* OCR Language Picker */
+"OCR Language" = "OCR 언어";
+"System Language" = "시스템 언어 사용";
+"OCR for" = "OCR for";
+
+/* App Language Picker */
+"App Language" = "앱 언어";
+
+/* HomeView */
+"Modern PDF Scanner" = "모던 PDF 스캐너";
+"Scan documents and convert them to PDF" = "문서를 스캔하여 PDF로 변환";
+"Scan Document" = "문서 스캔";
+"Scanned Pages" = "스캔된 페이지";
+"page" = "페이지";
+"pages" = "페이지";
+"Create PDF" = "PDF 생성";
+"Creating PDF..." = "PDF 생성 중...";
+"Clear All" = "모두 지우기";
+"PDF Generation" = "PDF 생성";
+"No scanned images available to create PDF" = "PDF를 생성할 스캔된 이미지가 없습니다";
+"Failed to generate PDF: %@" = "PDF 생성 실패: %@";
+
+/* LibraryView */
+"Library" = "라이브러리";
+"By Date" = "날짜별";
+"By Name" = "이름별";
+"By Size" = "크기별";
+"Add from:" = "추가 위치:";
+"iPhone" = "iPhone";
+"Photos" = "사진";
+"No PDFs Yet" = "아직 PDF가 없습니다";
+"Scan a document to create your first PDF" = "첫 번째 PDF를 만들기 위해 문서를 스캔하세요";
+"Files" = "파일";
+
+/* ToolsView */
+"Scan" = "스캔";
+"ID Cards" = "신분증";
+"Extract Text" = "텍스트 추출";
+"ID Photo\nEditor" = "신분증\n사진 편집기";
+"Formula" = "공식";
+"Photo\nTranslation" = "사진\n번역";
+"Book" = "책";
+"PPT" = "PPT";
+"Whiteboard" = "화이트보드";
+"Timestamp" = "타임스탬프";
+"Import" = "가져오기";
+"Import\nImages" = "이미지\n가져오기";
+"Import\nFiles" = "파일\n가져오기";
+
+/* ImageEditView */
+"Processing..." = "처리 중...";
+"Basic Adjustments" = "기본 조정";
+"Brightness" = "밝기";
+"Contrast" = "대비";
+"Saturation" = "채도";
+"Effects" = "효과";
+"Grayscale" = "그레이스케일";
+"Color Filters" = "색상 필터";
+"Recognize Text" = "텍스트 인식";
+
+/* PDFPreviewView */
+"PDF Load Failed" = "PDF 로드 실패";
+"PDF file could not be opened" = "PDF 파일을 열 수 없습니다";
+"Loading PDF..." = "PDF 로딩 중...";
+"PDF Ready" = "PDF 준비 완료";
+"Export PDF" = "PDF 내보내기";
+
+/* OCRView */
+"Language:" = "언어:";
+"Text Recognition" = "텍스트 인식";
+"Close" = "닫기";
+"Share" = "공유";
+"OCR Error" = "OCR 오류";
+"Recognizing Text..." = "텍스트 인식 중...";
+"Analyzing image for text content" = "텍스트 내용을 위한 이미지 분석 중";
+"Recognition Results" = "인식 결과";
+
+/* IDCardReaderView */
+"ID Card Reader" = "신분증 리더";
+"Point your ID card at the camera or select from gallery" = "신분증을 카메라에 대거나 갤러리에서 선택하세요";
+"Processing ID card..." = "신분증 처리 중...";
+"Please wait" = "잠시 기다려주세요";
+"Open Camera" = "카메라 열기";
+"Select from Gallery" = "갤러리에서 선택";
+"ID Reader" = "ID 리더";
+"ID Card Reading" = "신분증 읽기";
+
+/* Tab Bar */
+"Home" = "홈";
+"Files" = "파일";
+"Library" = "라이브러리";
+"Tools" = "도구";
+"Settings" = "설정";
+
+/* Action Bar */
+"Share" = "공유";
+"Tags" = "태그";
+"Merge" = "병합";
+"Delete" = "삭제";
+
+/* Common Actions */
+"Select" = "선택";
+"Cancel" = "취소";
+"OK" = "확인";
+"Close" = "닫기";
+"File Not Found" = "파일을 찾을 수 없음";
+"This PDF file may have been deleted or moved." = "이 PDF 파일이 삭제되었거나 이동되었을 수 있습니다.";
+"Add tags to selected items" = "선택한 항목에 태그 추가";
+"Merge selected PDFs" = "선택한 PDF 병합";
+"Select Folder" = "폴더 선택";
+
+/* Onboarding */
+"Welcome to PDF Scanner" = "PDF 스캐너에 오신 것을 환영합니다";
+"Scan, Edit & Organize" = "스캔, 편집 및 정리";
+"Transform your documents into digital PDFs with professional quality scanning." = "전문적인 품질의 스캔으로 문서를 디지털 PDF로 변환하세요.";
+"Smart Document Scanner" = "스마트 문서 스캐너";
+"AI-Powered Recognition" = "AI 기반 인식";
+"Advanced OCR technology automatically detects and enhances your documents for crystal clear results." = "고급 OCR 기술이 문서를 자동으로 감지하고 향상시켜 선명한 결과를 제공합니다.";
+"Powerful Editing Tools" = "강력한 편집 도구";
+"Perfect Your Documents" = "문서를 완벽하게";
+"Crop, rotate, adjust brightness and contrast to make your documents look professional." = "문서를 전문적으로 보이게 하기 위해 자르기, 회전, 밝기 및 대비 조정.";
+"Organize & Share" = "정리 및 공유";
+"Keep Everything Tidy" = "모든 것을 깔끔하게 유지";
+"Create folders, add tags, and easily share your PDFs with others or save to cloud storage." = "폴더 생성, 태그 추가, PDF를 다른 사람과 쉽게 공유하거나 클라우드 저장소에 저장.";
+"Ready to Start?" = "시작할 준비가 되셨나요?";
+"Let's Begin Scanning" = "스캔을 시작해보세요";
+"You're all set! Start scanning your first document and experience the power of modern PDF scanning." = "모든 준비가 완료되었습니다! 첫 번째 문서를 스캔하고 모던 PDF 스캔의 힘을 경험해보세요.";
+"Skip" = "건너뛰기";
+"Get Started" = "시작하기";
+
+/* Library Interface */
+"Other scanned" = "기타 스캔";
+
+/* PDF Viewer Interface */
+"Adjust" = "조정";
+"Share" = "공유";
+"Remove" = "제거";
+"Take Note" = "메모";
+"Timestamp" = "타임스탬프";
+"Pages" = "페이지";
+"Page %d / %d" = "페이지 %d / %d";
+
+/* Camera Interface */
+"Preparing camera..." = "카메라 준비 중...";
+"Single" = "단일";
+"Batch" = "일괄";
+"Sign" = "서명";
+"To Word" = "Word로";
+"Q" = "Q";
+
+/* Document Scanner Interface */
+"Page 1/1" = "페이지 1/1";
+"Back" = "뒤로";
+"Filters" = "필터";
+"Enhance" = "향상";
+"Crop" = "자르기";
+"Rotate" = "회전";
+"Add Page" = "페이지 추가";
+
+/* Filter/Adjustment Interface */
+"Cancel" = "취소";
+"Apply" = "적용";
+"Live Preview" = "실시간 미리보기";
+"Done" = "완료";
+"Original" = "원본";
+"Color" = "컬러";
+"Gray" = "그레이";
+"Black and White" = "흑백";
+"Brightness" = "밝기";
+"Adjust image brightness" = "이미지 밝기 조정";
+"Contrast" = "대비";
+"Adjust image contrast" = "이미지 대비 조정";
+
+/* PDF Viewer Interface */
+"Highlight" = "강조";
+"Hide" = "숨기기";
+"Sign" = "서명";
+"Go Back" = "돌아가기";
+
+/* Signature Interface */
+"Sign" = "서명";
+"Save" = "저장";
+
+/* Timestamp Interface */
+"Add Timestamp" = "타임스탬프 추가";
+"Add date and time information to your PDF" = "PDF에 날짜 및 시간 정보 추가";
+"Location" = "위치";
+"Top Left" = "왼쪽 위";
+"Top Right" = "오른쪽 위";
+"Bottom Left" = "왼쪽 아래";
+"Bottom Right" = "오른쪽 아래";
+"Center" = "중앙";
+"Format" = "형식";
+"Full Format" = "전체 형식";
+"Date Only" = "날짜만";
+"Time Only" = "시간만";
+"Short Format" = "짧은 형식";
+"Custom Format" = "사용자 정의 형식";
+"Content" = "내용";
+"Add Date" = "날짜 추가";
+"Add Time" = "시간 추가";
+"Font Size" = "글꼴 크기";
+"Size" = "크기";
+"Color" = "색상";
+"Font Color" = "글꼴 색상";
+"Background" = "배경";
+
+/* Share Sheet Interface */
+"Preview" = "미리보기";
+"More" = "더보기";
+"Copy" = "복사";
+"Mark up" = "마크업";
+"Print" = "인쇄";
+"Save to Files" = "파일에 저장";
+"Add Tag" = "태그 추가";
+"Use as Ringtone" = "벨소리로 사용";
+"Edit Actions" = "작업 편집";
+
+/* RevenueCat */
+"Loading plans..." = "플랜 로딩 중...";
+
+/* Premium/Paywall */
+"Open Premium" = "프리미엄 열기";
+"Unlimited PDF Scanning" = "무제한 PDF 스캔";
+"Advanced OCR Technology" = "고급 OCR 기술";
+"Smart Text Recognition" = "스마트 텍스트 인식";
+"Premium Features" = "프리미엄 기능";
+"Weekly" = "주간";
+"Monthly" = "월간";
+"Yearly" = "연간";
+"Lifetime" = "평생";
+"83% SAVING" = "83% 절약";
+"BEST VALUE" = "최고의 가치";
+"Open Now" = "지금 열기";
+"Restore" = "복원";
+"Privacy Policy" = "개인정보 보호정책";
+"Terms of Use" = "이용약관";
+"Word Timestamp" = "Word 타임스탬프";
+"To Excel" = "Excel로";
+"To PPT" = "PPT로";
+"PDF to\nImage" = "PDF를\n이미지로";
+"PDF to Long\nImage" = "PDF를 긴\n이미지로";
+
+/* ToolsView - Edit */
+"Sign" = "서명";
+"Add Watermark" = "워터마크 추가";
+"Smart Erase" = "스마트 지우기";
+"Remove Marks" = "표시 제거";
+"Enhance\nPhoto" = "사진\n개선";
+"Merge\nFiles" = "파일\n병합";
+"Extract\nPages" = "페이지\n추출";
+"Reorder\nPages" = "페이지\n재정렬";
+
+/* ToolsView - Education */
+"Question\nSet" = "문제\n세트";
+"Create\nQuiz" = "퀴즈\n만들기";
+"Prepare\nExam" = "시험\n준비";
+"Statistics" = "통계";
+
+/* Camera / Common */
+"Single" = "단일";
+"Batch" = "일괄";
+"Processing text..." = "텍스트 처리 중...";
+"Preparing camera..." = "카메라 준비 중...";
+"photo" = "장";
+"photos" = "장";
+
+/* Library / Document Picker */
+"Select files" = "파일 선택";
+"Selected Photos" = "선택된 사진";
+"Folder name" = "폴더 이름";
+"Create a new folder" = "새 폴더 만들기";
+"Delete PDF" = "PDF 삭제";
+"Delete Folder" = "폴더 삭제";
+"New Folder" = "새 폴더";
+"Rename" = "이름 변경";
+"Files" = "파일";
+"No PDFs Yet" = "아직 PDF 없음";
+"Scan a document to create your first PDF" = "첫 번째 PDF를 만들려면 문서를 스캔하세요";

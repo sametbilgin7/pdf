@@ -1,0 +1,424 @@
+/* Ukrainian Localization */
+
+/* Common */
+"OK" = "ОК";
+"Cancel" = "Скасувати";
+"Save" = "Зберегти";
+"Delete" = "Видалити";
+"Edit" = "Редагувати";
+"Share" = "Поділитися";
+"Close" = "Закрити";
+"Done" = "Готово";
+"Back" = "Назад";
+"Next" = "Далі";
+"Previous" = "Попередній";
+"Settings" = "Налаштування";
+"Library" = "Бібліотека";
+"Scan" = "Сканувати";
+"Tools" = "Інструменти";
+
+/* Home View */
+"Modern PDF Scanner" = "Сучасний PDF Сканер";
+"Scan documents and convert them to PDF" = "Скануйте документи та конвертуйте їх у PDF";
+"Scan Document" = "Сканувати Документ";
+"Scanned Pages" = "Відскановані Сторінки";
+"page" = "сторінка";
+"pages" = "сторінки";
+"Create PDF" = "Створити PDF";
+"Creating PDF..." = "Створення PDF...";
+"Clear All" = "Очистити Все";
+
+/* Settings View */
+"Appearance" = "Зовнішній вигляд";
+"Light" = "Світлий";
+"Dark" = "Темний";
+"System" = "Система";
+"Always use light appearance" = "Завжди використовувати світлий вигляд";
+"Always use dark appearance" = "Завжди використовувати темний вигляд";
+"Follow system setting" = "Слідувати системному налаштуванню";
+
+"Scanning Settings" = "Налаштування Сканування";
+"Scan Quality" = "Якість Сканування";
+"High quality means larger file size" = "Висока якість означає більший розмір файлу";
+"Low" = "Низька";
+"Medium" = "Середня";
+"High" = "Висока";
+"Auto Enhancement" = "Автоматичне Покращення";
+"Automatically enhance images" = "Автоматично покращувати зображення";
+"Auto Save" = "Автозбереження";
+"Automatically save scanned documents" = "Автоматично зберігати відскановані документи";
+
+"OCR Settings" = "Налаштування OCR";
+"OCR Language" = "Мова OCR";
+"Select language for text recognition" = "Виберіть мову для розпізнавання тексту";
+"Automatic" = "Автоматично";
+"Turkish" = "Турецька";
+"English" = "Англійська";
+"Spanish" = "Іспанська";
+"French" = "Французька";
+"German" = "Німецька";
+
+"Storage" = "Сховище";
+"Storage Usage" = "Використання Сховища";
+"Used space" = "Використаний простір";
+"Details" = "Деталі";
+
+"App Preferences" = "Налаштування Додатку";
+"Haptic Feedback" = "Тактильний Зворотний Зв'язок";
+"Tactile feedback" = "Тактильний зворотний зв'язок";
+"Show Tutorial" = "Показати Навчання";
+"Show tutorial on first use" = "Показати навчання при першому використанні";
+
+"Support & Legal" = "Підтримка та Правові";
+"About" = "Про програму";
+"App information" = "Інформація про додаток";
+"Privacy Policy" = "Політика Конфіденційності";
+"Data privacy and protection" = "Конфіденційність та захист даних";
+"Terms of Use" = "Умови Використання";
+"Service terms and conditions" = "Умови та положення сервісу";
+"Rate App" = "Оцінити Додаток";
+"Rate on App Store" = "Оцінити в App Store";
+
+/* About View */
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "Професійний додаток для сканування документів та створення PDF з розширеними можливостями OCR.";
+"© 2025 Modern PDF Scanner" = "© 2025 Сучасний PDF Сканер";
+"Made with ❤️ in Turkey" = "Зроблено з ❤️ в Туреччині";
+
+/* Privacy View */
+"Modern PDF Scanner is designed to protect user privacy." = "Сучасний PDF Сканер розроблений для захисту конфіденційності користувачів.";
+"Data Collection" = "Збір Даних";
+"Our app stores your scanned documents on your device and does not share them with any third parties." = "Наш додаток зберігає ваші відскановані документи на вашому пристрої та не передає їх третім особам.";
+"Permissions" = "Дозволи";
+"Camera and Photo Library access is used only for document scanning and saving operations." = "Доступ до камери та бібліотеки фотографій використовується лише для операцій сканування та збереження документів.";
+
+/* Terms View */
+"By using this app, you agree to the following terms." = "Використовуючи цей додаток, ви погоджуєтеся з наступними умовами.";
+"Usage Terms" = "Умови Використання";
+"• Use the app for legal purposes\n• Do not violate copyright\n• Do not misuse the app" = "• Використовуйте додаток в законних цілях\n• Не порушуйте авторські права\n• Не зловживайте додатком";
+
+/* Storage Details View */
+"Storage Usage" = "Використання Сховища";
+"MB used" = "МБ використано";
+"PDF Files" = "PDF Файли";
+"Image Cache" = "Кеш Зображень";
+
+/* Language Selection */
+"Language" = "Мова";
+"Select App Language" = "Виберіть Мову Додатку";
+"Turkish" = "Турецька";
+"English" = "Англійська";
+
+/* Settings View - App Settings */
+"App Settings" = "Налаштування Додатку";
+"Notifications" = "Сповіщення";
+"Dark Mode" = "Темний Режим";
+"Language" = "Мова";
+"Haptic Feedback" = "Тактильний Зворотний Зв'язок";
+"Show Tutorial" = "Показати Навчання";
+
+/* Settings View - PDF Scanning Settings */
+"PDF Scanning Settings" = "Налаштування Сканування PDF";
+"OCR Language" = "Мова OCR";
+"Scan Quality" = "Якість Сканування";
+"Auto Enhancement" = "Автоматичне Покращення";
+"Auto OCR" = "Авто OCR";
+"Edge Detection" = "Виявлення Країв";
+"Auto Rotate" = "Автоповорот";
+"Auto Save" = "Автозбереження";
+
+/* Settings View - PDF Settings */
+"PDF Settings" = "Налаштування PDF";
+"PDF Compression" = "Стиснення PDF";
+"Document Format" = "Формат Документа";
+"Batch Scanning" = "Пакетне Сканування";
+
+/* Settings View - Cloud & Storage */
+"Cloud & Storage" = "Хмара та Сховище";
+"Cloud Sync" = "Хмарна Синхронізація";
+"Storage Usage" = "Використання Сховища";
+
+/* Settings View - About */
+"About" = "Про програму";
+"Rate App" = "Оцінити Додаток";
+"Feedback" = "Зворотний Зв'язок";
+
+/* Settings View - Legal */
+"Legal" = "Правові";
+"Privacy Policy" = "Політика Конфіденційності";
+"Terms of Use" = "Умови Використання";
+
+/* Language Picker */
+"Language" = "Мова";
+"Language Description" = "Ви можете змінити це пізніше. Ви будете бачити контент мовою, яку виберете!";
+"Close" = "Закрити";
+
+/* Premium Card */
+"Go Premium" = "Перейти на Преміум";
+"Premium Description" = "Необмежене сканування та розширені функції";
+"Premium Active" = "Преміум Активний";
+"Premium Active Description" = "Всі преміум функції активні";
+"PREMIUM" = "ПРЕМІУМ";
+
+/* About View */
+"About" = "Про програму";
+"Version" = "Версія";
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "Професійний додаток для сканування документів та створення PDF з розширеними можливостями OCR.";
+"© 2025 Modern PDF Scanner" = "© 2025 Сучасний PDF Сканер";
+"Made with ❤️ in Turkey" = "Зроблено з ❤️ в Туреччині";
+
+/* Privacy View */
+"Privacy Policy" = "Політика Конфіденційності";
+"Privacy Description" = "Натисніть кнопку нижче, щоб переглянути нашу політику конфіденційності на веб-сайті.";
+"View Privacy Policy" = "Переглянути Політику Конфіденційності";
+
+/* Terms View */
+"Terms of Use" = "Умови Використання";
+"Terms Description" = "Натисніть кнопку нижче, щоб переглянути Стандартну Користувацьку Угоду Apple.";
+"View Terms of Use" = "Переглянути Умови Використання";
+
+/* Storage Details View */
+"Storage Usage" = "Використання Сховища";
+"MB used" = "МБ використано";
+"PDF Files" = "PDF Файли";
+"Image Cache" = "Кеш Зображень";
+
+/* OCR Language Picker */
+"OCR Language" = "Мова OCR";
+"System Language" = "Використовувати мову системи";
+"OCR for" = "OCR для";
+
+/* App Language Picker */
+"App Language" = "Мова Додатку";
+
+/* HomeView */
+"Modern PDF Scanner" = "Сучасний PDF Сканер";
+"Scan documents and convert them to PDF" = "Скануйте документи та конвертуйте їх у PDF";
+"Scan Document" = "Сканувати Документ";
+"Scanned Pages" = "Відскановані Сторінки";
+"page" = "сторінка";
+"pages" = "сторінки";
+"Create PDF" = "Створити PDF";
+"Creating PDF..." = "Створення PDF...";
+"Clear All" = "Очистити Все";
+"PDF Generation" = "Генерація PDF";
+"No scanned images available to create PDF" = "Немає відсканованих зображень для створення PDF";
+"Failed to generate PDF: %@" = "Не вдалося створити PDF: %@";
+
+/* LibraryView */
+"Library" = "Бібліотека";
+"By Date" = "За Датою";
+"By Name" = "За Ім'ям";
+"By Size" = "За Розміром";
+"Add from:" = "Додати з:";
+"iPhone" = "iPhone";
+"Photos" = "Фотографії";
+"No PDFs Yet" = "Поки немає PDF";
+"Scan a document to create your first PDF" = "Відскануйте документ, щоб створити ваш перший PDF";
+"Files" = "Файли";
+
+/* ToolsView */
+"Scan" = "Сканувати";
+"ID Cards" = "ID Картки";
+"Extract Text" = "Витягти Текст";
+"ID Photo\nEditor" = "Редактор\nID Фото";
+"Formula" = "Формула";
+"Photo\nTranslation" = "Переклад\nФото";
+"Book" = "Книга";
+"PPT" = "PPT";
+"Whiteboard" = "Дошка";
+"Timestamp" = "Мітка Часу";
+"Import" = "Імпорт";
+"Import\nImages" = "Імпорт\nЗображень";
+"Import\nFiles" = "Імпорт\nФайлів";
+
+/* ImageEditView */
+"Processing..." = "Обробка...";
+"Basic Adjustments" = "Базові Налаштування";
+"Brightness" = "Яскравість";
+"Contrast" = "Контраст";
+"Saturation" = "Насиченість";
+"Effects" = "Ефекти";
+"Grayscale" = "Відтінки Сірого";
+"Color Filters" = "Кольорові Фільтри";
+"Recognize Text" = "Розпізнати Текст";
+
+/* PDFPreviewView */
+"PDF Load Failed" = "Помилка Завантаження PDF";
+"PDF file could not be opened" = "PDF файл не може бути відкритий";
+"Loading PDF..." = "Завантаження PDF...";
+"PDF Ready" = "PDF Готовий";
+"Export PDF" = "Експорт PDF";
+
+/* OCRView */
+"Language:" = "Мова:";
+"Text Recognition" = "Розпізнавання Тексту";
+"Close" = "Закрити";
+"Share" = "Поділитися";
+"OCR Error" = "Помилка OCR";
+"Recognizing Text..." = "Розпізнавання тексту...";
+"Analyzing image for text content" = "Аналіз зображення на предмет текстового вмісту";
+"Recognition Results" = "Результати Розпізнавання";
+
+/* IDCardReaderView */
+"ID Card Reader" = "Зчитувач ID Карток";
+"Point your ID card at the camera or select from gallery" = "Наведіть вашу ID картку на камеру або виберіть з галереї";
+"Processing ID card..." = "Обробка ID картки...";
+"Please wait" = "Будь ласка, зачекайте";
+"Open Camera" = "Відкрити Камеру";
+"Select from Gallery" = "Вибрати з Галереї";
+"ID Reader" = "ID Зчитувач";
+"ID Card Reading" = "Читання ID Картки";
+
+/* Tab Bar */
+"Home" = "Головна";
+"Files" = "Файли";
+"Library" = "Бібліотека";
+"Tools" = "Інструменти";
+"Settings" = "Налаштування";
+
+/* Action Bar */
+"Share" = "Поділитися";
+"Tags" = "Теги";
+"Merge" = "Об'єднати";
+"Delete" = "Видалити";
+
+/* Common Actions */
+"Select" = "Вибрати";
+"Cancel" = "Скасувати";
+"OK" = "ОК";
+"Close" = "Закрити";
+"File Not Found" = "Файл Не Знайдено";
+"This PDF file may have been deleted or moved." = "Цей PDF файл міг бути видалений або переміщений.";
+"Add tags to selected items" = "Додати теги до вибраних елементів";
+"Merge selected PDFs" = "Об'єднати вибрані PDF";
+"Select Folder" = "Вибрати Папку";
+
+/* Onboarding */
+"Welcome to PDF Scanner" = "Ласкаво просимо до PDF Сканера";
+"Scan, Edit & Organize" = "Сканувати, Редагувати та Організовувати";
+"Transform your documents into digital PDFs with professional quality scanning." = "Перетворіть ваші документи в цифрові PDF з професійною якістю сканування.";
+"Smart Document Scanner" = "Розумний Сканер Документів";
+"AI-Powered Recognition" = "Розпізнавання на основі ШІ";
+"Advanced OCR technology automatically detects and enhances your documents for crystal clear results." = "Передова OCR технологія автоматично виявляє та покращує ваші документи для кришталево чистих результатів.";
+"Powerful Editing Tools" = "Потужні Інструменти Редагування";
+"Perfect Your Documents" = "Вдосконаліть Ваші Документи";
+"Crop, rotate, adjust brightness and contrast to make your documents look professional." = "Обрізайте, повертайте, налаштовуйте яскравість та контраст, щоб ваші документи виглядали професійно.";
+"Organize & Share" = "Організовувати та Ділитися";
+"Keep Everything Tidy" = "Тримайте Все в Порядку";
+"Create folders, add tags, and easily share your PDFs with others or save to cloud storage." = "Створюйте папки, додавайте теги та легко діліться вашими PDF з іншими або зберігайте в хмарному сховищі.";
+"Ready to Start?" = "Готові Почати?";
+"Let's Begin Scanning" = "Давайте Почнемо Сканування";
+"You're all set! Start scanning your first document and experience the power of modern PDF scanning." = "Ви готові! Почніть сканувати ваш перший документ та відчуйте силу сучасного PDF сканування.";
+"Skip" = "Пропустити";
+"Get Started" = "Почати";
+
+/* Library Interface */
+"Other scanned" = "Інші відскановані";
+
+/* PDF Viewer Interface */
+"Adjust" = "Налаштувати";
+"Share" = "Поділитися";
+"Remove" = "Видалити";
+"Take Note" = "Примітка";
+"Timestamp" = "Мітка часу";
+"Pages" = "Сторінки";
+"Page %d / %d" = "Сторінка %d / %d";
+
+/* Camera Interface */
+"Preparing camera..." = "Підготовка камери...";
+"Single" = "Одиночний";
+"Batch" = "Пакетний";
+"Sign" = "Підпис";
+"To Word" = "В Word";
+"Q" = "Q";
+
+/* Document Scanner Interface */
+"Page 1/1" = "Сторінка 1/1";
+"Back" = "Назад";
+"Filters" = "Фільтри";
+"Enhance" = "Покращити";
+"Crop" = "Обрізати";
+"Rotate" = "Повернути";
+"Add Page" = "Додати сторінку";
+
+/* Filter/Adjustment Interface */
+"Cancel" = "Скасувати";
+"Apply" = "Застосувати";
+"Live Preview" = "Живий Попередній Перегляд";
+"Done" = "Готово";
+"Original" = "Оригінал";
+"Color" = "Колір";
+"Gray" = "Сірий";
+"Black and White" = "Чорно-білий";
+"Brightness" = "Яскравість";
+"Adjust image brightness" = "Налаштуйте яскравість зображення";
+"Contrast" = "Контраст";
+"Adjust image contrast" = "Налаштуйте контраст зображення";
+
+/* PDF Viewer Interface */
+"Highlight" = "Виділити";
+"Hide" = "Приховати";
+"Sign" = "Підпис";
+"Go Back" = "Повернутися";
+
+/* Signature Interface */
+"Sign" = "Підписати";
+"Save" = "Зберегти";
+
+/* Timestamp Interface */
+"Add Timestamp" = "Додати Мітку Часу";
+"Add date and time information to your PDF" = "Додайте інформацію про дату та час до вашого PDF";
+"Location" = "Розташування";
+"Top Left" = "Верхній лівий";
+"Top Right" = "Верхній правий";
+"Bottom Left" = "Нижній лівий";
+"Bottom Right" = "Нижній правий";
+"Center" = "Центр";
+"Format" = "Формат";
+"Full Format" = "Повний формат";
+"Date Only" = "Тільки дата";
+"Time Only" = "Тільки час";
+"Short Format" = "Короткий формат";
+"Custom Format" = "Користувацький формат";
+"Content" = "Вміст";
+"Add Date" = "Додати дату";
+"Add Time" = "Додати час";
+"Font Size" = "Розмір шрифту";
+"Size" = "Розмір";
+"Color" = "Колір";
+"Font Color" = "Колір шрифту";
+"Background" = "Фон";
+
+/* Share Sheet Interface */
+"Preview" = "Попередній перегляд";
+"More" = "Більше";
+"Copy" = "Копіювати";
+"Mark up" = "Розмітка";
+"Print" = "Друк";
+"Save to Files" = "Зберегти в файли";
+"Add Tag" = "Додати тег";
+"Use as Ringtone" = "Використовувати як дзвінок";
+"Edit Actions" = "Редагувати дії";
+
+/* RevenueCat */
+"Loading plans..." = "Завантаження планів...";
+
+/* Premium/Paywall */
+"Open Premium" = "Відкрити Преміум";
+"Unlimited PDF Scanning" = "Необмежене Сканування PDF";
+"Advanced OCR Technology" = "Передова OCR Технологія";
+"Smart Text Recognition" = "Розумне Розпізнавання Тексту";
+"Premium Features" = "Преміум Функції";
+"Weekly" = "Щотижня";
+"Monthly" = "Щомісяця";
+"Yearly" = "Щорічно";
+"Lifetime" = "На все життя";
+"83% SAVING" = "83% ЕКОНОМІЯ";
+"BEST VALUE" = "НАЙКРАЩА ЦІНА";
+"Open Now" = "Відкрити Зараз";
+"Restore" = "Відновити";
+"Privacy Policy" = "Політика Конфіденційності";
+"Terms of Use" = "Умови Використання";
+
+
+

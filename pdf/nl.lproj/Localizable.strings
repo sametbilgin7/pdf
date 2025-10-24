@@ -1,0 +1,424 @@
+/* Dutch Localization */
+
+/* Common */
+"OK" = "OK";
+"Cancel" = "Annuleren";
+"Save" = "Opslaan";
+"Delete" = "Verwijderen";
+"Edit" = "Bewerken";
+"Share" = "Delen";
+"Close" = "Sluiten";
+"Done" = "Klaar";
+"Back" = "Terug";
+"Next" = "Volgende";
+"Previous" = "Vorige";
+"Settings" = "Instellingen";
+"Library" = "Bibliotheek";
+"Scan" = "Scannen";
+"Tools" = "Gereedschappen";
+
+/* Home View */
+"Modern PDF Scanner" = "Moderne PDF Scanner";
+"Scan documents and convert them to PDF" = "Scan documenten en converteer ze naar PDF";
+"Scan Document" = "Document Scannen";
+"Scanned Pages" = "Gescande Pagina's";
+"page" = "pagina";
+"pages" = "pagina's";
+"Create PDF" = "PDF Maken";
+"Creating PDF..." = "PDF maken...";
+"Clear All" = "Alles Wissen";
+
+/* Settings View */
+"Appearance" = "Uiterlijk";
+"Light" = "Licht";
+"Dark" = "Donker";
+"System" = "Systeem";
+"Always use light appearance" = "Altijd licht uiterlijk gebruiken";
+"Always use dark appearance" = "Altijd donker uiterlijk gebruiken";
+"Follow system setting" = "Systeeminstelling volgen";
+
+"Scanning Settings" = "Scan Instellingen";
+"Scan Quality" = "Scan Kwaliteit";
+"High quality means larger file size" = "Hoge kwaliteit betekent grotere bestandsgrootte";
+"Low" = "Laag";
+"Medium" = "Gemiddeld";
+"High" = "Hoog";
+"Auto Enhancement" = "Automatische Verbetering";
+"Automatically enhance images" = "Afbeeldingen automatisch verbeteren";
+"Auto Save" = "Automatisch Opslaan";
+"Automatically save scanned documents" = "Gescande documenten automatisch opslaan";
+
+"OCR Settings" = "OCR Instellingen";
+"OCR Language" = "OCR Taal";
+"Select language for text recognition" = "Selecteer taal voor tekstherkenning";
+"Automatic" = "Automatisch";
+"Turkish" = "Turks";
+"English" = "Engels";
+"Spanish" = "Spaans";
+"French" = "Frans";
+"German" = "Duits";
+
+"Storage" = "Opslag";
+"Storage Usage" = "Opslaggebruik";
+"Used space" = "Gebruikte ruimte";
+"Details" = "Details";
+
+"App Preferences" = "App Voorkeuren";
+"Haptic Feedback" = "Haptische Feedback";
+"Tactile feedback" = "Tactiele feedback";
+"Show Tutorial" = "Tutorial Tonen";
+"Show tutorial on first use" = "Tutorial tonen bij eerste gebruik";
+
+"Support & Legal" = "Ondersteuning en Juridisch";
+"About" = "Over";
+"App information" = "App informatie";
+"Privacy Policy" = "Privacybeleid";
+"Data privacy and protection" = "Gegevensprivacy en bescherming";
+"Terms of Use" = "Gebruiksvoorwaarden";
+"Service terms and conditions" = "Servicevoorwaarden";
+"Rate App" = "App Beoordelen";
+"Rate on App Store" = "Beoordelen in App Store";
+
+/* About View */
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "Professionele documentenscanner en PDF-creatie app met geavanceerde OCR-mogelijkheden.";
+"© 2025 Modern PDF Scanner" = "© 2025 Moderne PDF Scanner";
+"Made with ❤️ in Turkey" = "Gemaakt met ❤️ in Turkije";
+
+/* Privacy View */
+"Modern PDF Scanner is designed to protect user privacy." = "De Moderne PDF Scanner is ontworpen om gebruikersprivacy te beschermen.";
+"Data Collection" = "Gegevensverzameling";
+"Our app stores your scanned documents on your device and does not share them with any third parties." = "Onze app slaat uw gescande documenten op uw apparaat op en deelt ze niet met derden.";
+"Permissions" = "Machtigingen";
+"Camera and Photo Library access is used only for document scanning and saving operations." = "Camera en Fotobibliotheek toegang wordt alleen gebruikt voor documentenscan en opslagoperaties.";
+
+/* Terms View */
+"By using this app, you agree to the following terms." = "Door deze app te gebruiken, gaat u akkoord met de volgende voorwaarden.";
+"Usage Terms" = "Gebruiksvoorwaarden";
+"• Use the app for legal purposes\n• Do not violate copyright\n• Do not misuse the app" = "• Gebruik de app voor legale doeleinden\n• Schend geen auteursrechten\n• Misbruik de app niet";
+
+/* Storage Details View */
+"Storage Usage" = "Opslaggebruik";
+"MB used" = "MB gebruikt";
+"PDF Files" = "PDF Bestanden";
+"Image Cache" = "Afbeelding Cache";
+
+/* Language Selection */
+"Language" = "Taal";
+"Select App Language" = "App Taal Selecteren";
+"Turkish" = "Turks";
+"English" = "Engels";
+
+/* Settings View - App Settings */
+"App Settings" = "App Instellingen";
+"Notifications" = "Meldingen";
+"Dark Mode" = "Donkere Modus";
+"Language" = "Taal";
+"Haptic Feedback" = "Haptische Feedback";
+"Show Tutorial" = "Tutorial Tonen";
+
+/* Settings View - PDF Scanning Settings */
+"PDF Scanning Settings" = "PDF Scan Instellingen";
+"OCR Language" = "OCR Taal";
+"Scan Quality" = "Scan Kwaliteit";
+"Auto Enhancement" = "Automatische Verbetering";
+"Auto OCR" = "Auto OCR";
+"Edge Detection" = "Randdetectie";
+"Auto Rotate" = "Auto Roteren";
+"Auto Save" = "Automatisch Opslaan";
+
+/* Settings View - PDF Settings */
+"PDF Settings" = "PDF Instellingen";
+"PDF Compression" = "PDF Compressie";
+"Document Format" = "Document Formaat";
+"Batch Scanning" = "Batch Scannen";
+
+/* Settings View - Cloud & Storage */
+"Cloud & Storage" = "Cloud en Opslag";
+"Cloud Sync" = "Cloud Synchronisatie";
+"Storage Usage" = "Opslaggebruik";
+
+/* Settings View - About */
+"About" = "Over";
+"Rate App" = "App Beoordelen";
+"Feedback" = "Feedback";
+
+/* Settings View - Legal */
+"Legal" = "Juridisch";
+"Privacy Policy" = "Privacybeleid";
+"Terms of Use" = "Gebruiksvoorwaarden";
+
+/* Language Picker */
+"Language" = "Taal";
+"Language Description" = "U kunt dit later wijzigen. U zult inhoud in de taal zien die u kiest!";
+"Close" = "Sluiten";
+
+/* Premium Card */
+"Go Premium" = "Ga Premium";
+"Premium Description" = "Onbeperkt scannen en geavanceerde functies";
+"Premium Active" = "Premium Actief";
+"Premium Active Description" = "Alle premium functies zijn actief";
+"PREMIUM" = "PREMIUM";
+
+/* About View */
+"About" = "Over";
+"Version" = "Versie";
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "Professionele documentenscanner en PDF-creatie app met geavanceerde OCR-mogelijkheden.";
+"© 2025 Modern PDF Scanner" = "© 2025 Moderne PDF Scanner";
+"Made with ❤️ in Turkey" = "Gemaakt met ❤️ in Turkije";
+
+/* Privacy View */
+"Privacy Policy" = "Privacybeleid";
+"Privacy Description" = "Klik op de knop hieronder om ons privacybeleid op de website te bekijken.";
+"View Privacy Policy" = "Privacybeleid Bekijken";
+
+/* Terms View */
+"Terms of Use" = "Gebruiksvoorwaarden";
+"Terms Description" = "Klik op de knop hieronder om Apple's Standaard EULA te bekijken.";
+"View Terms of Use" = "Gebruiksvoorwaarden Bekijken";
+
+/* Storage Details View */
+"Storage Usage" = "Opslaggebruik";
+"MB used" = "MB gebruikt";
+"PDF Files" = "PDF Bestanden";
+"Image Cache" = "Afbeelding Cache";
+
+/* OCR Language Picker */
+"OCR Language" = "OCR Taal";
+"System Language" = "Systeemtaal gebruiken";
+"OCR for" = "OCR voor";
+
+/* App Language Picker */
+"App Language" = "App Taal";
+
+/* HomeView */
+"Modern PDF Scanner" = "Moderne PDF Scanner";
+"Scan documents and convert them to PDF" = "Scan documenten en converteer ze naar PDF";
+"Scan Document" = "Document Scannen";
+"Scanned Pages" = "Gescande Pagina's";
+"page" = "pagina";
+"pages" = "pagina's";
+"Create PDF" = "PDF Maken";
+"Creating PDF..." = "PDF maken...";
+"Clear All" = "Alles Wissen";
+"PDF Generation" = "PDF Generatie";
+"No scanned images available to create PDF" = "Geen gescande afbeeldingen beschikbaar om PDF te maken";
+"Failed to generate PDF: %@" = "PDF genereren mislukt: %@";
+
+/* LibraryView */
+"Library" = "Bibliotheek";
+"By Date" = "Op Datum";
+"By Name" = "Op Naam";
+"By Size" = "Op Grootte";
+"Add from:" = "Toevoegen van:";
+"iPhone" = "iPhone";
+"Photos" = "Foto's";
+"No PDFs Yet" = "Nog Geen PDF's";
+"Scan a document to create your first PDF" = "Scan een document om uw eerste PDF te maken";
+"Files" = "Bestanden";
+
+/* ToolsView */
+"Scan" = "Scannen";
+"ID Cards" = "ID Kaarten";
+"Extract Text" = "Tekst Extraheren";
+"ID Photo\nEditor" = "ID Foto\nEditor";
+"Formula" = "Formule";
+"Photo\nTranslation" = "Foto\nVertaling";
+"Book" = "Boek";
+"PPT" = "PPT";
+"Whiteboard" = "Whiteboard";
+"Timestamp" = "Tijdstempel";
+"Import" = "Importeren";
+"Import\nImages" = "Afbeeldingen\nImporteren";
+"Import\nFiles" = "Bestanden\nImporteren";
+
+/* ImageEditView */
+"Processing..." = "Verwerken...";
+"Basic Adjustments" = "Basis Aanpassingen";
+"Brightness" = "Helderheid";
+"Contrast" = "Contrast";
+"Saturation" = "Verzadiging";
+"Effects" = "Effecten";
+"Grayscale" = "Grijstinten";
+"Color Filters" = "Kleurfilters";
+"Recognize Text" = "Tekst Herkennen";
+
+/* PDFPreviewView */
+"PDF Load Failed" = "PDF Laden Mislukt";
+"PDF file could not be opened" = "PDF bestand kon niet worden geopend";
+"Loading PDF..." = "PDF laden...";
+"PDF Ready" = "PDF Klaar";
+"Export PDF" = "PDF Exporteren";
+
+/* OCRView */
+"Language:" = "Taal:";
+"Text Recognition" = "Tekstherkenning";
+"Close" = "Sluiten";
+"Share" = "Delen";
+"OCR Error" = "OCR Fout";
+"Recognizing Text..." = "Tekst herkennen...";
+"Analyzing image for text content" = "Afbeelding analyseren voor tekstinhoud";
+"Recognition Results" = "Herkenningsresultaten";
+
+/* IDCardReaderView */
+"ID Card Reader" = "ID Kaart Lezer";
+"Point your ID card at the camera or select from gallery" = "Richt uw ID kaart op de camera of selecteer uit galerij";
+"Processing ID card..." = "ID kaart verwerken...";
+"Please wait" = "Even geduld";
+"Open Camera" = "Camera Openen";
+"Select from Gallery" = "Selecteer uit Galerij";
+"ID Reader" = "ID Lezer";
+"ID Card Reading" = "ID Kaart Lezen";
+
+/* Tab Bar */
+"Home" = "Home";
+"Files" = "Bestanden";
+"Library" = "Bibliotheek";
+"Tools" = "Gereedschappen";
+"Settings" = "Instellingen";
+
+/* Action Bar */
+"Share" = "Delen";
+"Tags" = "Tags";
+"Merge" = "Samenvoegen";
+"Delete" = "Verwijderen";
+
+/* Common Actions */
+"Select" = "Selecteren";
+"Cancel" = "Annuleren";
+"OK" = "OK";
+"Close" = "Sluiten";
+"File Not Found" = "Bestand Niet Gevonden";
+"This PDF file may have been deleted or moved." = "Dit PDF bestand is mogelijk verwijderd of verplaatst.";
+"Add tags to selected items" = "Tags toevoegen aan geselecteerde items";
+"Merge selected PDFs" = "Geselecteerde PDF's samenvoegen";
+"Select Folder" = "Map Selecteren";
+
+/* Onboarding */
+"Welcome to PDF Scanner" = "Welkom bij PDF Scanner";
+"Scan, Edit & Organize" = "Scannen, Bewerken en Organiseren";
+"Transform your documents into digital PDFs with professional quality scanning." = "Transformeer uw documenten naar digitale PDF's met professionele kwaliteit scannen.";
+"Smart Document Scanner" = "Slimme Document Scanner";
+"AI-Powered Recognition" = "AI-Gestuurde Herkenning";
+"Advanced OCR technology automatically detects and enhances your documents for crystal clear results." = "Geavanceerde OCR technologie detecteert en verbetert automatisch uw documenten voor kristalheldere resultaten.";
+"Powerful Editing Tools" = "Krachtige Bewerkingstools";
+"Perfect Your Documents" = "Perfectioneer Uw Documenten";
+"Crop, rotate, adjust brightness and contrast to make your documents look professional." = "Snij, roteer, pas helderheid en contrast aan om uw documenten professioneel te laten lijken.";
+"Organize & Share" = "Organiseren en Delen";
+"Keep Everything Tidy" = "Houd Alles Netjes";
+"Create folders, add tags, and easily share your PDFs with others or save to cloud storage." = "Maak mappen, voeg tags toe en deel eenvoudig uw PDF's met anderen of sla op in cloudopslag.";
+"Ready to Start?" = "Klaar om te Beginnen?";
+"Let's Begin Scanning" = "Laten we Beginnen met Scannen";
+"You're all set! Start scanning your first document and experience the power of modern PDF scanning." = "U bent klaar! Begin met het scannen van uw eerste document en ervaar de kracht van moderne PDF scanning.";
+"Skip" = "Overslaan";
+"Get Started" = "Aan de Slag";
+
+/* Library Interface */
+"Other scanned" = "Andere gescande";
+
+/* PDF Viewer Interface */
+"Adjust" = "Aanpassen";
+"Share" = "Delen";
+"Remove" = "Verwijderen";
+"Take Note" = "Notitie";
+"Timestamp" = "Tijdstempel";
+"Pages" = "Pagina's";
+"Page %d / %d" = "Pagina %d / %d";
+
+/* Camera Interface */
+"Preparing camera..." = "Camera voorbereiden...";
+"Single" = "Enkel";
+"Batch" = "Batch";
+"Sign" = "Ondertekenen";
+"To Word" = "Naar Word";
+"Q" = "Q";
+
+/* Document Scanner Interface */
+"Page 1/1" = "Pagina 1/1";
+"Back" = "Terug";
+"Filters" = "Filters";
+"Enhance" = "Verbeteren";
+"Crop" = "Bijsnijden";
+"Rotate" = "Roteren";
+"Add Page" = "Pagina Toevoegen";
+
+/* Filter/Adjustment Interface */
+"Cancel" = "Annuleren";
+"Apply" = "Toepassen";
+"Live Preview" = "Live Voorbeeld";
+"Done" = "Klaar";
+"Original" = "Origineel";
+"Color" = "Kleur";
+"Gray" = "Grijs";
+"Black and White" = "Zwart en Wit";
+"Brightness" = "Helderheid";
+"Adjust image brightness" = "Afbeelding helderheid aanpassen";
+"Contrast" = "Contrast";
+"Adjust image contrast" = "Afbeelding contrast aanpassen";
+
+/* PDF Viewer Interface */
+"Highlight" = "Markeren";
+"Hide" = "Verbergen";
+"Sign" = "Ondertekenen";
+"Go Back" = "Terug";
+
+/* Signature Interface */
+"Sign" = "Ondertekenen";
+"Save" = "Opslaan";
+
+/* Timestamp Interface */
+"Add Timestamp" = "Tijdstempel Toevoegen";
+"Add date and time information to your PDF" = "Voeg datum en tijd informatie toe aan uw PDF";
+"Location" = "Locatie";
+"Top Left" = "Linksboven";
+"Top Right" = "Rechtsboven";
+"Bottom Left" = "Linksonder";
+"Bottom Right" = "Rechtsonder";
+"Center" = "Midden";
+"Format" = "Formaat";
+"Full Format" = "Volledig Formaat";
+"Date Only" = "Alleen Datum";
+"Time Only" = "Alleen Tijd";
+"Short Format" = "Kort Formaat";
+"Custom Format" = "Aangepast Formaat";
+"Content" = "Inhoud";
+"Add Date" = "Datum Toevoegen";
+"Add Time" = "Tijd Toevoegen";
+"Font Size" = "Lettergrootte";
+"Size" = "Grootte";
+"Color" = "Kleur";
+"Font Color" = "Letterkleur";
+"Background" = "Achtergrond";
+
+/* Share Sheet Interface */
+"Preview" = "Voorbeeld";
+"More" = "Meer";
+"Copy" = "Kopiëren";
+"Mark up" = "Markeren";
+"Print" = "Afdrukken";
+"Save to Files" = "Opslaan in Bestanden";
+"Add Tag" = "Tag Toevoegen";
+"Use as Ringtone" = "Gebruiken als Beltoon";
+"Edit Actions" = "Acties Bewerken";
+
+/* RevenueCat */
+"Loading plans..." = "Plannen laden...";
+
+/* Premium/Paywall */
+"Open Premium" = "Premium Openen";
+"Unlimited PDF Scanning" = "Onbeperkt PDF Scannen";
+"Advanced OCR Technology" = "Geavanceerde OCR Technologie";
+"Smart Text Recognition" = "Slimme Tekstherkenning";
+"Premium Features" = "Premium Functies";
+"Weekly" = "Wekelijks";
+"Monthly" = "Maandelijks";
+"Yearly" = "Jaarlijks";
+"Lifetime" = "Levenslang";
+"83% SAVING" = "83% BESPARING";
+"BEST VALUE" = "BESTE WAARDE";
+"Open Now" = "Nu Openen";
+"Restore" = "Herstellen";
+"Privacy Policy" = "Privacybeleid";
+"Terms of Use" = "Gebruiksvoorwaarden";
+
+
+

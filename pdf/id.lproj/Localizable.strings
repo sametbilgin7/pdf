@@ -1,0 +1,460 @@
+/* Indonesian Localization */
+
+/* Common */
+"OK" = "OK";
+"Cancel" = "Batal";
+"Save" = "Simpan";
+"Delete" = "Hapus";
+"Edit" = "Edit";
+"Share" = "Bagikan";
+"Close" = "Tutup";
+"Done" = "Selesai";
+"Back" = "Kembali";
+"Next" = "Berikutnya";
+"Previous" = "Sebelumnya";
+"Settings" = "Pengaturan";
+"Library" = "Perpustakaan";
+"Scan" = "Pindai";
+"Tools" = "Alat";
+
+/* Home View */
+"Modern PDF Scanner" = "Scanner PDF Modern";
+"Scan documents and convert them to PDF" = "Pindai dokumen dan konversi ke PDF";
+"Scan Document" = "Pindai Dokumen";
+"Scanned Pages" = "Halaman yang Dipindai";
+"page" = "halaman";
+"pages" = "halaman";
+"Create PDF" = "Buat PDF";
+"Creating PDF..." = "Membuat PDF...";
+"Clear All" = "Hapus Semua";
+
+/* Settings View */
+"Appearance" = "Tampilan";
+"Light" = "Terang";
+"Dark" = "Gelap";
+"System" = "Sistem";
+"Always use light appearance" = "Selalu gunakan tampilan terang";
+"Always use dark appearance" = "Selalu gunakan tampilan gelap";
+"Follow system setting" = "Ikuti pengaturan sistem";
+
+"Scanning Settings" = "Pengaturan Pemindaian";
+"Scan Quality" = "Kualitas Pemindaian";
+"High quality means larger file size" = "Kualitas tinggi berarti ukuran file lebih besar";
+"Low" = "Rendah";
+"Medium" = "Sedang";
+"High" = "Tinggi";
+"Auto Enhancement" = "Peningkatan Otomatis";
+"Automatically enhance images" = "Tingkatkan gambar secara otomatis";
+"Auto Save" = "Simpan Otomatis";
+"Automatically save scanned documents" = "Simpan dokumen yang dipindai secara otomatis";
+
+"OCR Settings" = "Pengaturan OCR";
+"OCR Language" = "Bahasa OCR";
+"Select language for text recognition" = "Pilih bahasa untuk pengenalan teks";
+"Automatic" = "Otomatis";
+"Turkish" = "Turki";
+"English" = "Inggris";
+"Spanish" = "Spanyol";
+"French" = "Prancis";
+"German" = "Jerman";
+
+"Storage" = "Penyimpanan";
+"Storage Usage" = "Penggunaan Penyimpanan";
+"Used space" = "Ruang yang digunakan";
+"Details" = "Detail";
+
+"App Preferences" = "Preferensi Aplikasi";
+"Haptic Feedback" = "Umpan Balik Haptic";
+"Tactile feedback" = "Umpan balik taktil";
+"Show Tutorial" = "Tampilkan Tutorial";
+"Show tutorial on first use" = "Tampilkan tutorial pada penggunaan pertama";
+
+"Support & Legal" = "Dukungan dan Hukum";
+"About" = "Tentang";
+"App information" = "Informasi aplikasi";
+"Privacy Policy" = "Kebijakan Privasi";
+"Data privacy and protection" = "Privasi dan perlindungan data";
+"Terms of Use" = "Syarat Penggunaan";
+"Service terms and conditions" = "Syarat dan ketentuan layanan";
+"Rate App" = "Nilai Aplikasi";
+"Rate on App Store" = "Nilai di App Store";
+
+/* About View */
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "Aplikasi pemindaian dokumen profesional dan pembuatan PDF dengan kemampuan OCR canggih.";
+"© 2025 Modern PDF Scanner" = "© 2025 Scanner PDF Modern";
+"Made with ❤️ in Turkey" = "Dibuat dengan ❤️ di Turki";
+
+/* Privacy View */
+"Modern PDF Scanner is designed to protect user privacy." = "Scanner PDF Modern dirancang untuk melindungi privasi pengguna.";
+"Data Collection" = "Pengumpulan Data";
+"Our app stores your scanned documents on your device and does not share them with any third parties." = "Aplikasi kami menyimpan dokumen yang dipindai di perangkat Anda dan tidak membagikannya dengan pihak ketiga.";
+"Permissions" = "Izin";
+"Camera and Photo Library access is used only for document scanning and saving operations." = "Akses Kamera dan Perpustakaan Foto hanya digunakan untuk operasi pemindaian dan penyimpanan dokumen.";
+
+/* Terms View */
+"By using this app, you agree to the following terms." = "Dengan menggunakan aplikasi ini, Anda menyetujui syarat-syarat berikut.";
+"Usage Terms" = "Syarat Penggunaan";
+"• Use the app for legal purposes\n• Do not violate copyright\n• Do not misuse the app" = "• Gunakan aplikasi untuk tujuan legal\n• Jangan melanggar hak cipta\n• Jangan menyalahgunakan aplikasi";
+
+/* Storage Details View */
+"Storage Usage" = "Penggunaan Penyimpanan";
+"MB used" = "MB digunakan";
+"PDF Files" = "File PDF";
+"Image Cache" = "Cache Gambar";
+
+/* Language Selection */
+"Language" = "Bahasa";
+"Select App Language" = "Pilih Bahasa Aplikasi";
+"Turkish" = "Turki";
+"English" = "Inggris";
+
+/* Settings View - App Settings */
+"App Settings" = "Pengaturan Aplikasi";
+"Notifications" = "Notifikasi";
+"Dark Mode" = "Mode Gelap";
+"Language" = "Bahasa";
+"Haptic Feedback" = "Umpan Balik Haptic";
+"Show Tutorial" = "Tampilkan Tutorial";
+
+/* Settings View - PDF Scanning Settings */
+"PDF Scanning Settings" = "Pengaturan Pemindaian PDF";
+"OCR Language" = "Bahasa OCR";
+"Scan Quality" = "Kualitas Pemindaian";
+"Auto Enhancement" = "Peningkatan Otomatis";
+"Auto OCR" = "OCR Otomatis";
+"Edge Detection" = "Deteksi Tepi";
+"Auto Rotate" = "Rotasi Otomatis";
+"Auto Save" = "Simpan Otomatis";
+
+/* Settings View - PDF Settings */
+"PDF Settings" = "Pengaturan PDF";
+"PDF Compression" = "Kompresi PDF";
+"Document Format" = "Format Dokumen";
+"Batch Scanning" = "Pemindaian Batch";
+
+/* Settings View - Cloud & Storage */
+"Cloud & Storage" = "Cloud dan Penyimpanan";
+"Cloud Sync" = "Sinkronisasi Cloud";
+"Storage Usage" = "Penggunaan Penyimpanan";
+
+/* Settings View - About */
+"About" = "Tentang";
+"Rate App" = "Nilai Aplikasi";
+"Feedback" = "Umpan Balik";
+
+/* Settings View - Legal */
+"Legal" = "Hukum";
+"Privacy Policy" = "Kebijakan Privasi";
+"Terms of Use" = "Syarat Penggunaan";
+
+/* Language Picker */
+"Language" = "Bahasa";
+"Language Description" = "Anda dapat mengubah ini nanti. Anda akan melihat konten dalam bahasa yang Anda pilih!";
+"Close" = "Tutup";
+
+/* Premium Card */
+"Go Premium" = "Beralih ke Premium";
+"Premium Description" = "Pemindaian tak terbatas dan fitur canggih";
+"Premium Active" = "Premium Aktif";
+"Premium Active Description" = "Semua fitur premium aktif";
+"PREMIUM" = "PREMIUM";
+
+/* About View */
+"About" = "Tentang";
+"Version" = "Versi";
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "Aplikasi pemindaian dokumen profesional dan pembuatan PDF dengan kemampuan OCR canggih.";
+"© 2025 Modern PDF Scanner" = "© 2025 Scanner PDF Modern";
+"Made with ❤️ in Turkey" = "Dibuat dengan ❤️ di Turki";
+
+/* Privacy View */
+"Privacy Policy" = "Kebijakan Privasi";
+"Privacy Description" = "Klik tombol di bawah untuk melihat kebijakan privasi kami di website.";
+"View Privacy Policy" = "Lihat Kebijakan Privasi";
+
+/* Terms View */
+"Terms of Use" = "Syarat Penggunaan";
+"Terms Description" = "Klik tombol di bawah untuk melihat EULA Standar Apple.";
+"View Terms of Use" = "Lihat Syarat Penggunaan";
+
+/* Storage Details View */
+"Storage Usage" = "Penggunaan Penyimpanan";
+"MB used" = "MB digunakan";
+"PDF Files" = "File PDF";
+"Image Cache" = "Cache Gambar";
+
+/* OCR Language Picker */
+"OCR Language" = "Bahasa OCR";
+"System Language" = "Gunakan bahasa sistem";
+"OCR for" = "OCR untuk";
+
+/* App Language Picker */
+"App Language" = "Bahasa Aplikasi";
+
+/* HomeView */
+"Modern PDF Scanner" = "Scanner PDF Modern";
+"Scan documents and convert them to PDF" = "Pindai dokumen dan konversi ke PDF";
+"Scan Document" = "Pindai Dokumen";
+"Scanned Pages" = "Halaman yang Dipindai";
+"page" = "halaman";
+"pages" = "halaman";
+"Create PDF" = "Buat PDF";
+"Creating PDF..." = "Membuat PDF...";
+"Clear All" = "Hapus Semua";
+"PDF Generation" = "Generasi PDF";
+"No scanned images available to create PDF" = "Tidak ada gambar yang dipindai untuk membuat PDF";
+"Failed to generate PDF: %@" = "Gagal membuat PDF: %@";
+
+/* LibraryView */
+"Library" = "Perpustakaan";
+"By Date" = "Berdasarkan Tanggal";
+"By Name" = "Berdasarkan Nama";
+"By Size" = "Berdasarkan Ukuran";
+"Add from:" = "Tambahkan dari:";
+"iPhone" = "iPhone";
+"Photos" = "Foto";
+"No PDFs Yet" = "Belum Ada PDF";
+"Scan a document to create your first PDF" = "Pindai dokumen untuk membuat PDF pertama Anda";
+"Files" = "File";
+
+/* ToolsView */
+"Scan" = "Pindai";
+"ID Cards" = "Kartu Identitas";
+"Extract Text" = "Ekstrak Teks";
+"ID Photo\nEditor" = "Editor\nFoto ID";
+"Formula" = "Rumus";
+"Photo\nTranslation" = "Terjemahan\nFoto";
+"Book" = "Buku";
+"PPT" = "PPT";
+"Whiteboard" = "Papan Tulis";
+"Timestamp" = "Timestamp";
+"Import" = "Impor";
+"Import\nImages" = "Impor\nGambar";
+"Import\nFiles" = "Impor\nFile";
+
+/* ImageEditView */
+"Processing..." = "Memproses...";
+"Basic Adjustments" = "Penyesuaian Dasar";
+"Brightness" = "Kecerahan";
+"Contrast" = "Kontras";
+"Saturation" = "Saturasi";
+"Effects" = "Efek";
+"Grayscale" = "Skala Abu-abu";
+"Color Filters" = "Filter Warna";
+"Recognize Text" = "Kenali Teks";
+
+/* PDFPreviewView */
+"PDF Load Failed" = "Gagal Memuat PDF";
+"PDF file could not be opened" = "File PDF tidak dapat dibuka";
+"Loading PDF..." = "Memuat PDF...";
+"PDF Ready" = "PDF Siap";
+"Export PDF" = "Ekspor PDF";
+
+/* OCRView */
+"Language:" = "Bahasa:";
+"Text Recognition" = "Pengenalan Teks";
+"Close" = "Tutup";
+"Share" = "Bagikan";
+"OCR Error" = "Error OCR";
+"Recognizing Text..." = "Mengenali teks...";
+"Analyzing image for text content" = "Menganalisis gambar untuk konten teks";
+"Recognition Results" = "Hasil Pengenalan";
+
+/* IDCardReaderView */
+"ID Card Reader" = "Pembaca Kartu Identitas";
+"Point your ID card at the camera or select from gallery" = "Arahkan kartu identitas Anda ke kamera atau pilih dari galeri";
+"Processing ID card..." = "Memproses kartu identitas...";
+"Please wait" = "Mohon tunggu";
+"Open Camera" = "Buka Kamera";
+"Select from Gallery" = "Pilih dari Galeri";
+"ID Reader" = "Pembaca ID";
+"ID Card Reading" = "Membaca Kartu Identitas";
+
+/* Tab Bar */
+"Home" = "Beranda";
+"Files" = "File";
+"Library" = "Perpustakaan";
+"Tools" = "Alat";
+"Settings" = "Pengaturan";
+
+/* Action Bar */
+"Share" = "Bagikan";
+"Tags" = "Tag";
+"Merge" = "Gabungkan";
+"Delete" = "Hapus";
+
+/* Common Actions */
+"Select" = "Pilih";
+"Cancel" = "Batal";
+"OK" = "OK";
+"Close" = "Tutup";
+"File Not Found" = "File Tidak Ditemukan";
+"This PDF file may have been deleted or moved." = "File PDF ini mungkin telah dihapus atau dipindahkan.";
+"Add tags to selected items" = "Tambahkan tag ke item yang dipilih";
+"Merge selected PDFs" = "Gabungkan PDF yang dipilih";
+"Select Folder" = "Pilih Folder";
+
+/* Onboarding */
+"Welcome to PDF Scanner" = "Selamat Datang di Scanner PDF";
+"Scan, Edit & Organize" = "Pindai, Edit & Organisir";
+"Transform your documents into digital PDFs with professional quality scanning." = "Ubah dokumen Anda menjadi PDF digital dengan pemindaian kualitas profesional.";
+"Smart Document Scanner" = "Scanner Dokumen Cerdas";
+"AI-Powered Recognition" = "Pengenalan Berbasis AI";
+"Advanced OCR technology automatically detects and enhances your documents for crystal clear results." = "Teknologi OCR canggih secara otomatis mendeteksi dan meningkatkan dokumen Anda untuk hasil yang jernih.";
+"Powerful Editing Tools" = "Alat Editing Kuat";
+"Perfect Your Documents" = "Sempurnakan Dokumen Anda";
+"Crop, rotate, adjust brightness and contrast to make your documents look professional." = "Potong, putar, sesuaikan kecerahan dan kontras untuk membuat dokumen Anda terlihat profesional.";
+"Organize & Share" = "Organisir & Bagikan";
+"Keep Everything Tidy" = "Jaga Semuanya Rapi";
+"Create folders, add tags, and easily share your PDFs with others or save to cloud storage." = "Buat folder, tambahkan tag, dan bagikan PDF Anda dengan mudah kepada orang lain atau simpan ke penyimpanan cloud.";
+"Ready to Start?" = "Siap untuk Memulai?";
+"Let's Begin Scanning" = "Mari Mulai Memindai";
+"You're all set! Start scanning your first document and experience the power of modern PDF scanning." = "Anda siap! Mulai pindai dokumen pertama Anda dan rasakan kekuatan pemindaian PDF modern.";
+"Skip" = "Lewati";
+"Get Started" = "Mulai";
+
+/* Library Interface */
+"Other scanned" = "Lainnya yang dipindai";
+
+/* PDF Viewer Interface */
+"Adjust" = "Sesuaikan";
+"Share" = "Bagikan";
+"Remove" = "Hapus";
+"Take Note" = "Catatan";
+"Timestamp" = "Timestamp";
+"Pages" = "Halaman";
+"Page %d / %d" = "Halaman %d / %d";
+
+/* Camera Interface */
+"Preparing camera..." = "Mempersiapkan kamera...";
+"Single" = "Tunggal";
+"Batch" = "Batch";
+"Sign" = "Tanda Tangan";
+"To Word" = "Ke Word";
+"Q" = "Q";
+
+/* Document Scanner Interface */
+"Page 1/1" = "Halaman 1/1";
+"Back" = "Kembali";
+"Filters" = "Filter";
+"Enhance" = "Tingkatkan";
+"Crop" = "Potong";
+"Rotate" = "Putar";
+"Add Page" = "Tambah Halaman";
+
+/* Filter/Adjustment Interface */
+"Cancel" = "Batal";
+"Apply" = "Terapkan";
+"Live Preview" = "Pratinjau Langsung";
+"Done" = "Selesai";
+"Original" = "Asli";
+"Color" = "Warna";
+"Gray" = "Abu-abu";
+"Black and White" = "Hitam Putih";
+"Brightness" = "Kecerahan";
+"Adjust image brightness" = "Sesuaikan kecerahan gambar";
+"Contrast" = "Kontras";
+"Adjust image contrast" = "Sesuaikan kontras gambar";
+
+/* PDF Viewer Interface */
+"Highlight" = "Sorot";
+"Hide" = "Sembunyikan";
+"Sign" = "Tanda Tangan";
+"Go Back" = "Kembali";
+
+/* Signature Interface */
+"Sign" = "Tanda Tangan";
+"Save" = "Simpan";
+
+/* Timestamp Interface */
+"Add Timestamp" = "Tambah Timestamp";
+"Add date and time information to your PDF" = "Tambahkan informasi tanggal dan waktu ke PDF Anda";
+"Location" = "Lokasi";
+"Top Left" = "Kiri Atas";
+"Top Right" = "Kanan Atas";
+"Bottom Left" = "Kiri Bawah";
+"Bottom Right" = "Kanan Bawah";
+"Center" = "Tengah";
+"Format" = "Format";
+"Full Format" = "Format Lengkap";
+"Date Only" = "Hanya Tanggal";
+"Time Only" = "Hanya Waktu";
+"Short Format" = "Format Pendek";
+"Custom Format" = "Format Kustom";
+"Content" = "Konten";
+"Add Date" = "Tambah Tanggal";
+"Add Time" = "Tambah Waktu";
+"Font Size" = "Ukuran Font";
+"Size" = "Ukuran";
+"Color" = "Warna";
+"Font Color" = "Warna Font";
+"Background" = "Latar Belakang";
+
+/* Share Sheet Interface */
+"Preview" = "Pratinjau";
+"More" = "Lainnya";
+"Copy" = "Salin";
+"Mark up" = "Tandai";
+"Print" = "Cetak";
+"Save to Files" = "Simpan ke File";
+"Add Tag" = "Tambah Tag";
+"Use as Ringtone" = "Gunakan sebagai Ringtone";
+"Edit Actions" = "Edit Aksi";
+
+/* RevenueCat */
+"Loading plans..." = "Memuat paket...";
+
+/* Premium/Paywall */
+"Open Premium" = "Buka Premium";
+"Unlimited PDF Scanning" = "Pemindaian PDF Tak Terbatas";
+"Advanced OCR Technology" = "Teknologi OCR Canggih";
+"Smart Text Recognition" = "Pengenalan Teks Cerdas";
+"Premium Features" = "Fitur Premium";
+"Weekly" = "Mingguan";
+"Monthly" = "Bulanan";
+"Yearly" = "Tahunan";
+"Lifetime" = "Seumur Hidup";
+"83% SAVING" = "83% PENGHEMATAN";
+"BEST VALUE" = "NILAI TERBAIK";
+"Open Now" = "Buka Sekarang";
+"Restore" = "Pulihkan";
+"Privacy Policy" = "Kebijakan Privasi";
+"Terms of Use" = "Syarat Penggunaan";
+"Word Timestamp" = "Stempel waktu Word";
+"To Excel" = "Ke Excel";
+"To PPT" = "Ke PPT";
+"PDF to\nImage" = "PDF ke\nGambar";
+"PDF to Long\nImage" = "PDF ke Gambar\nPanjang";
+
+/* ToolsView - Edit */
+"Sign" = "Tandatangani";
+"Add Watermark" = "Tambahkan watermark";
+"Smart Erase" = "Hapus pintar";
+"Remove Marks" = "Hapus tanda";
+"Enhance\nPhoto" = "Tingkatkan\nFoto";
+"Merge\nFiles" = "Gabungkan\nBerkas";
+"Extract\nPages" = "Ekstrak\nHalaman";
+"Reorder\nPages" = "Susun ulang\nHalaman";
+
+/* ToolsView - Education */
+"Question\nSet" = "Kumpulan\nPertanyaan";
+"Create\nQuiz" = "Buat\nKuis";
+"Prepare\nExam" = "Siapkan\nUjian";
+"Statistics" = "Statistik";
+
+/* Camera / Common */
+"Single" = "Tunggal";
+"Batch" = "Batch";
+"Processing text..." = "Memproses teks...";
+"Preparing camera..." = "Menyiapkan kamera...";
+"photo" = "foto";
+"photos" = "foto";
+
+/* Library / Document Picker */
+"Select files" = "Pilih berkas";
+"Selected Photos" = "Foto terpilih";
+"Folder name" = "Nama folder";
+"Create a new folder" = "Buat folder baru";
+"Delete PDF" = "Hapus PDF";
+"Delete Folder" = "Hapus folder";
+"New Folder" = "Folder baru";
+"Rename" = "Ganti nama";

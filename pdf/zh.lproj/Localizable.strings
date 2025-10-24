@@ -1,0 +1,424 @@
+/* Chinese Localization */
+
+/* Common */
+"OK" = "确定";
+"Cancel" = "取消";
+"Save" = "保存";
+"Delete" = "删除";
+"Edit" = "编辑";
+"Share" = "分享";
+"Close" = "关闭";
+"Done" = "完成";
+"Back" = "返回";
+"Next" = "下一步";
+"Previous" = "上一步";
+"Settings" = "设置";
+"Library" = "资料库";
+"Scan" = "扫描";
+"Tools" = "工具";
+
+/* Home View */
+"Modern PDF Scanner" = "现代PDF扫描器";
+"Scan documents and convert them to PDF" = "扫描文档并将其转换为PDF";
+"Scan Document" = "扫描文档";
+"Scanned Pages" = "已扫描页面";
+"page" = "页";
+"pages" = "页";
+"Create PDF" = "创建PDF";
+"Creating PDF..." = "正在创建PDF...";
+"Clear All" = "清除全部";
+
+/* Settings View */
+"Appearance" = "外观";
+"Light" = "浅色";
+"Dark" = "深色";
+"System" = "系统";
+"Always use light appearance" = "始终使用浅色外观";
+"Always use dark appearance" = "始终使用深色外观";
+"Follow system setting" = "跟随系统设置";
+
+"Scanning Settings" = "扫描设置";
+"Scan Quality" = "扫描质量";
+"High quality means larger file size" = "高质量意味着更大的文件大小";
+"Low" = "低";
+"Medium" = "中";
+"High" = "高";
+"Auto Enhancement" = "自动增强";
+"Automatically enhance images" = "自动增强图像";
+"Auto Save" = "自动保存";
+"Automatically save scanned documents" = "自动保存扫描的文档";
+
+"OCR Settings" = "OCR设置";
+"OCR Language" = "OCR语言";
+"Select language for text recognition" = "选择文本识别的语言";
+"Automatic" = "自动";
+"Turkish" = "土耳其语";
+"English" = "英语";
+"Spanish" = "西班牙语";
+"French" = "法语";
+"German" = "德语";
+
+"Storage" = "存储";
+"Storage Usage" = "存储使用情况";
+"Used space" = "已使用空间";
+"Details" = "详情";
+
+"App Preferences" = "应用偏好";
+"Haptic Feedback" = "触觉反馈";
+"Tactile feedback" = "触觉反馈";
+"Show Tutorial" = "显示教程";
+"Show tutorial on first use" = "首次使用时显示教程";
+
+"Support & Legal" = "支持和法律";
+"About" = "关于";
+"App information" = "应用信息";
+"Privacy Policy" = "隐私政策";
+"Data privacy and protection" = "数据隐私和保护";
+"Terms of Use" = "使用条款";
+"Service terms and conditions" = "服务条款和条件";
+"Rate App" = "评价应用";
+"Rate on App Store" = "在App Store评价";
+
+/* About View */
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "具有高级OCR功能的专业文档扫描和PDF创建应用。";
+"© 2025 Modern PDF Scanner" = "© 2025 现代PDF扫描器";
+"Made with ❤️ in Turkey" = "在土耳其用❤️制作";
+
+/* Privacy View */
+"Modern PDF Scanner is designed to protect user privacy." = "现代PDF扫描器旨在保护用户隐私。";
+"Data Collection" = "数据收集";
+"Our app stores your scanned documents on your device and does not share them with any third parties." = "我们的应用将您的扫描文档存储在您的设备上，不与任何第三方共享。";
+"Permissions" = "权限";
+"Camera and Photo Library access is used only for document scanning and saving operations." = "相机和照片库访问仅用于文档扫描和保存操作。";
+
+/* Terms View */
+"By using this app, you agree to the following terms." = "使用此应用即表示您同意以下条款。";
+"Usage Terms" = "使用条款";
+"• Use the app for legal purposes\n• Do not violate copyright\n• Do not misuse the app" = "• 将应用用于合法目的\n• 不违反版权\n• 不滥用应用";
+
+/* Storage Details View */
+"Storage Usage" = "存储使用情况";
+"MB used" = "已使用MB";
+"PDF Files" = "PDF文件";
+"Image Cache" = "图像缓存";
+
+/* Language Selection */
+"Language" = "语言";
+"Select App Language" = "选择应用语言";
+"Turkish" = "土耳其语";
+"English" = "英语";
+
+/* Settings View - App Settings */
+"App Settings" = "应用设置";
+"Notifications" = "通知";
+"Dark Mode" = "深色模式";
+"Language" = "语言";
+"Haptic Feedback" = "触觉反馈";
+"Show Tutorial" = "显示教程";
+
+/* Settings View - PDF Scanning Settings */
+"PDF Scanning Settings" = "PDF扫描设置";
+"OCR Language" = "OCR语言";
+"Scan Quality" = "扫描质量";
+"Auto Enhancement" = "自动增强";
+"Auto OCR" = "自动OCR";
+"Edge Detection" = "边缘检测";
+"Auto Rotate" = "自动旋转";
+"Auto Save" = "自动保存";
+
+/* Settings View - PDF Settings */
+"PDF Settings" = "PDF设置";
+"PDF Compression" = "PDF压缩";
+"Document Format" = "文档格式";
+"Batch Scanning" = "批量扫描";
+
+/* Settings View - Cloud & Storage */
+"Cloud & Storage" = "云和存储";
+"Cloud Sync" = "云同步";
+"Storage Usage" = "存储使用情况";
+
+/* Settings View - About */
+"About" = "关于";
+"Rate App" = "评价应用";
+"Feedback" = "反馈";
+
+/* Settings View - Legal */
+"Legal" = "法律";
+"Privacy Policy" = "隐私政策";
+"Terms of Use" = "使用条款";
+
+/* Language Picker */
+"Language" = "语言";
+"Language Description" = "您可以稍后更改此设置。您将看到所选语言的内容！";
+"Close" = "关闭";
+
+/* Premium Card */
+"Go Premium" = "升级到高级版";
+"Premium Description" = "无限扫描和高级功能";
+"Premium Active" = "高级版已激活";
+"Premium Active Description" = "所有高级功能已激活";
+"PREMIUM" = "高级版";
+
+/* About View */
+"About" = "关于";
+"Version" = "版本";
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "具有高级OCR功能的专业文档扫描和PDF创建应用。";
+"© 2025 Modern PDF Scanner" = "© 2025 现代PDF扫描器";
+"Made with ❤️ in Turkey" = "在土耳其用❤️制作";
+
+/* Privacy View */
+"Privacy Policy" = "隐私政策";
+"Privacy Description" = "点击下面的按钮在网站上查看我们的隐私政策。";
+"View Privacy Policy" = "查看隐私政策";
+
+/* Terms View */
+"Terms of Use" = "使用条款";
+"Terms Description" = "点击下面的按钮查看Apple的标准最终用户许可协议。";
+"View Terms of Use" = "查看使用条款";
+
+/* Storage Details View */
+"Storage Usage" = "存储使用情况";
+"MB used" = "已使用MB";
+"PDF Files" = "PDF文件";
+"Image Cache" = "图像缓存";
+
+/* OCR Language Picker */
+"OCR Language" = "OCR语言";
+"System Language" = "使用系统语言";
+"OCR for" = "OCR用于";
+
+/* App Language Picker */
+"App Language" = "应用语言";
+
+/* HomeView */
+"Modern PDF Scanner" = "现代PDF扫描器";
+"Scan documents and convert them to PDF" = "扫描文档并将其转换为PDF";
+"Scan Document" = "扫描文档";
+"Scanned Pages" = "已扫描页面";
+"page" = "页";
+"pages" = "页";
+"Create PDF" = "创建PDF";
+"Creating PDF..." = "正在创建PDF...";
+"Clear All" = "清除全部";
+"PDF Generation" = "PDF生成";
+"No scanned images available to create PDF" = "没有可用的扫描图像来创建PDF";
+"Failed to generate PDF: %@" = "生成PDF失败：%@";
+
+/* LibraryView */
+"Library" = "资料库";
+"By Date" = "按日期";
+"By Name" = "按名称";
+"By Size" = "按大小";
+"Add from:" = "从以下位置添加：";
+"iPhone" = "iPhone";
+"Photos" = "照片";
+"No PDFs Yet" = "还没有PDF";
+"Scan a document to create your first PDF" = "扫描文档以创建您的第一个PDF";
+"Files" = "文件";
+
+/* ToolsView */
+"Scan" = "扫描";
+"ID Cards" = "身份证";
+"Extract Text" = "提取文本";
+"ID Photo\nEditor" = "身份证\n照片编辑器";
+"Formula" = "公式";
+"Photo\nTranslation" = "照片\n翻译";
+"Book" = "书籍";
+"PPT" = "PPT";
+"Whiteboard" = "白板";
+"Timestamp" = "时间戳";
+"Import" = "导入";
+"Import\nImages" = "导入\n图像";
+"Import\nFiles" = "导入\n文件";
+
+/* ImageEditView */
+"Processing..." = "处理中...";
+"Basic Adjustments" = "基本调整";
+"Brightness" = "亮度";
+"Contrast" = "对比度";
+"Saturation" = "饱和度";
+"Effects" = "效果";
+"Grayscale" = "灰度";
+"Color Filters" = "颜色滤镜";
+"Recognize Text" = "识别文本";
+
+/* PDFPreviewView */
+"PDF Load Failed" = "PDF加载失败";
+"PDF file could not be opened" = "无法打开PDF文件";
+"Loading PDF..." = "正在加载PDF...";
+"PDF Ready" = "PDF已准备就绪";
+"Export PDF" = "导出PDF";
+
+/* OCRView */
+"Language:" = "语言：";
+"Text Recognition" = "文本识别";
+"Close" = "关闭";
+"Share" = "分享";
+"OCR Error" = "OCR错误";
+"Recognizing Text..." = "正在识别文本...";
+"Analyzing image for text content" = "正在分析图像以获取文本内容";
+"Recognition Results" = "识别结果";
+
+/* IDCardReaderView */
+"ID Card Reader" = "身份证读取器";
+"Point your ID card at the camera or select from gallery" = "将您的身份证对准相机或从相册中选择";
+"Processing ID card..." = "正在处理身份证...";
+"Please wait" = "请稍候";
+"Open Camera" = "打开相机";
+"Select from Gallery" = "从相册选择";
+"ID Reader" = "身份证读取器";
+"ID Card Reading" = "身份证读取";
+
+/* Tab Bar */
+"Home" = "首页";
+"Files" = "文件";
+"Library" = "资料库";
+"Tools" = "工具";
+"Settings" = "设置";
+
+/* Action Bar */
+"Share" = "分享";
+"Tags" = "标签";
+"Merge" = "合并";
+"Delete" = "删除";
+
+/* Common Actions */
+"Select" = "选择";
+"Cancel" = "取消";
+"OK" = "确定";
+"Close" = "关闭";
+"File Not Found" = "文件未找到";
+"This PDF file may have been deleted or moved." = "此PDF文件可能已被删除或移动。";
+"Add tags to selected items" = "为选定的项目添加标签";
+"Merge selected PDFs" = "合并选定的PDF";
+"Select Folder" = "选择文件夹";
+
+/* Onboarding */
+"Welcome to PDF Scanner" = "欢迎使用PDF扫描器";
+"Scan, Edit & Organize" = "扫描、编辑和组织";
+"Transform your documents into digital PDFs with professional quality scanning." = "通过专业质量的扫描将您的文档转换为数字PDF。";
+"Smart Document Scanner" = "智能文档扫描器";
+"AI-Powered Recognition" = "AI驱动的识别";
+"Advanced OCR technology automatically detects and enhances your documents for crystal clear results." = "先进的OCR技术自动检测和增强您的文档，获得清晰的结果。";
+"Powerful Editing Tools" = "强大的编辑工具";
+"Perfect Your Documents" = "完善您的文档";
+"Crop, rotate, adjust brightness and contrast to make your documents look professional." = "裁剪、旋转、调整亮度和对比度，让您的文档看起来专业。";
+"Organize & Share" = "组织和分享";
+"Keep Everything Tidy" = "保持一切整洁";
+"Create folders, add tags, and easily share your PDFs with others or save to cloud storage." = "创建文件夹、添加标签，轻松与他人分享您的PDF或保存到云存储。";
+"Ready to Start?" = "准备开始了吗？";
+"Let's Begin Scanning" = "让我们开始扫描";
+"You're all set! Start scanning your first document and experience the power of modern PDF scanning." = "您已准备就绪！开始扫描您的第一个文档，体验现代PDF扫描的强大功能。";
+"Skip" = "跳过";
+"Get Started" = "开始";
+
+/* Library Interface */
+"Other scanned" = "其他扫描";
+
+/* PDF Viewer Interface */
+"Adjust" = "调整";
+"Share" = "分享";
+"Remove" = "删除";
+"Take Note" = "笔记";
+"Timestamp" = "时间戳";
+"Pages" = "页面";
+"Page %d / %d" = "第%d页 / 共%d页";
+
+/* Camera Interface */
+"Preparing camera..." = "正在准备相机...";
+"Single" = "单张";
+"Batch" = "批量";
+"Sign" = "签名";
+"To Word" = "到Word";
+"Q" = "Q";
+
+/* Document Scanner Interface */
+"Page 1/1" = "第1页/共1页";
+"Back" = "返回";
+"Filters" = "滤镜";
+"Enhance" = "增强";
+"Crop" = "裁剪";
+"Rotate" = "旋转";
+"Add Page" = "添加页面";
+
+/* Filter/Adjustment Interface */
+"Cancel" = "取消";
+"Apply" = "应用";
+"Live Preview" = "实时预览";
+"Done" = "完成";
+"Original" = "原始";
+"Color" = "颜色";
+"Gray" = "灰色";
+"Black and White" = "黑白";
+"Brightness" = "亮度";
+"Adjust image brightness" = "调整图像亮度";
+"Contrast" = "对比度";
+"Adjust image contrast" = "调整图像对比度";
+
+/* PDF Viewer Interface */
+"Highlight" = "高亮";
+"Hide" = "隐藏";
+"Sign" = "签名";
+"Go Back" = "返回";
+
+/* Signature Interface */
+"Sign" = "签名";
+"Save" = "保存";
+
+/* Timestamp Interface */
+"Add Timestamp" = "添加时间戳";
+"Add date and time information to your PDF" = "为您的PDF添加日期和时间信息";
+"Location" = "位置";
+"Top Left" = "左上";
+"Top Right" = "右上";
+"Bottom Left" = "左下";
+"Bottom Right" = "右下";
+"Center" = "中心";
+"Format" = "格式";
+"Full Format" = "完整格式";
+"Date Only" = "仅日期";
+"Time Only" = "仅时间";
+"Short Format" = "短格式";
+"Custom Format" = "自定义格式";
+"Content" = "内容";
+"Add Date" = "添加日期";
+"Add Time" = "添加时间";
+"Font Size" = "字体大小";
+"Size" = "大小";
+"Color" = "颜色";
+"Font Color" = "字体颜色";
+"Background" = "背景";
+
+/* Share Sheet Interface */
+"Preview" = "预览";
+"More" = "更多";
+"Copy" = "复制";
+"Mark up" = "标记";
+"Print" = "打印";
+"Save to Files" = "保存到文件";
+"Add Tag" = "添加标签";
+"Use as Ringtone" = "用作铃声";
+"Edit Actions" = "编辑操作";
+
+/* RevenueCat */
+"Loading plans..." = "正在加载计划...";
+
+/* Premium/Paywall */
+"Open Premium" = "打开高级版";
+"Unlimited PDF Scanning" = "无限PDF扫描";
+"Advanced OCR Technology" = "先进OCR技术";
+"Smart Text Recognition" = "智能文本识别";
+"Premium Features" = "高级功能";
+"Weekly" = "每周";
+"Monthly" = "每月";
+"Yearly" = "每年";
+"Lifetime" = "终身";
+"83% SAVING" = "83%节省";
+"BEST VALUE" = "最佳价值";
+"Open Now" = "立即打开";
+"Restore" = "恢复";
+"Privacy Policy" = "隐私政策";
+"Terms of Use" = "使用条款";
+
+
+

@@ -1,0 +1,424 @@
+/* Russian Localization */
+
+/* Common */
+"OK" = "ОК";
+"Cancel" = "Отмена";
+"Save" = "Сохранить";
+"Delete" = "Удалить";
+"Edit" = "Редактировать";
+"Share" = "Поделиться";
+"Close" = "Закрыть";
+"Done" = "Готово";
+"Back" = "Назад";
+"Next" = "Далее";
+"Previous" = "Предыдущий";
+"Settings" = "Настройки";
+"Library" = "Библиотека";
+"Scan" = "Сканировать";
+"Tools" = "Инструменты";
+
+/* Home View */
+"Modern PDF Scanner" = "Современный PDF Сканер";
+"Scan documents and convert them to PDF" = "Сканируйте документы и конвертируйте их в PDF";
+"Scan Document" = "Сканировать Документ";
+"Scanned Pages" = "Отсканированные Страницы";
+"page" = "страница";
+"pages" = "страницы";
+"Create PDF" = "Создать PDF";
+"Creating PDF..." = "Создание PDF...";
+"Clear All" = "Очистить Все";
+
+/* Settings View */
+"Appearance" = "Внешний вид";
+"Light" = "Светлый";
+"Dark" = "Темный";
+"System" = "Система";
+"Always use light appearance" = "Всегда использовать светлый вид";
+"Always use dark appearance" = "Всегда использовать темный вид";
+"Follow system setting" = "Следовать системной настройке";
+
+"Scanning Settings" = "Настройки Сканирования";
+"Scan Quality" = "Качество Сканирования";
+"High quality means larger file size" = "Высокое качество означает больший размер файла";
+"Low" = "Низкое";
+"Medium" = "Среднее";
+"High" = "Высокое";
+"Auto Enhancement" = "Автоматическое Улучшение";
+"Automatically enhance images" = "Автоматически улучшать изображения";
+"Auto Save" = "Автосохранение";
+"Automatically save scanned documents" = "Автоматически сохранять отсканированные документы";
+
+"OCR Settings" = "Настройки OCR";
+"OCR Language" = "Язык OCR";
+"Select language for text recognition" = "Выберите язык для распознавания текста";
+"Automatic" = "Автоматически";
+"Turkish" = "Турецкий";
+"English" = "Английский";
+"Spanish" = "Испанский";
+"French" = "Французский";
+"German" = "Немецкий";
+
+"Storage" = "Хранилище";
+"Storage Usage" = "Использование Хранилища";
+"Used space" = "Используемое пространство";
+"Details" = "Детали";
+
+"App Preferences" = "Настройки Приложения";
+"Haptic Feedback" = "Тактильная Обратная Связь";
+"Tactile feedback" = "Тактильная обратная связь";
+"Show Tutorial" = "Показать Обучение";
+"Show tutorial on first use" = "Показать обучение при первом использовании";
+
+"Support & Legal" = "Поддержка и Правовые";
+"About" = "О программе";
+"App information" = "Информация о приложении";
+"Privacy Policy" = "Политика Конфиденциальности";
+"Data privacy and protection" = "Конфиденциальность и защита данных";
+"Terms of Use" = "Условия Использования";
+"Service terms and conditions" = "Условия и положения сервиса";
+"Rate App" = "Оценить Приложение";
+"Rate on App Store" = "Оценить в App Store";
+
+/* About View */
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "Профессиональное приложение для сканирования документов и создания PDF с расширенными возможностями OCR.";
+"© 2025 Modern PDF Scanner" = "© 2025 Современный PDF Сканер";
+"Made with ❤️ in Turkey" = "Сделано с ❤️ в Турции";
+
+/* Privacy View */
+"Modern PDF Scanner is designed to protect user privacy." = "Современный PDF Сканер разработан для защиты конфиденциальности пользователей.";
+"Data Collection" = "Сбор Данных";
+"Our app stores your scanned documents on your device and does not share them with any third parties." = "Наше приложение хранит ваши отсканированные документы на вашем устройстве и не передает их третьим лицам.";
+"Permissions" = "Разрешения";
+"Camera and Photo Library access is used only for document scanning and saving operations." = "Доступ к камере и библиотеке фотографий используется только для операций сканирования и сохранения документов.";
+
+/* Terms View */
+"By using this app, you agree to the following terms." = "Используя это приложение, вы соглашаетесь со следующими условиями.";
+"Usage Terms" = "Условия Использования";
+"• Use the app for legal purposes\n• Do not violate copyright\n• Do not misuse the app" = "• Используйте приложение в законных целях\n• Не нарушайте авторские права\n• Не злоупотребляйте приложением";
+
+/* Storage Details View */
+"Storage Usage" = "Использование Хранилища";
+"MB used" = "МБ использовано";
+"PDF Files" = "PDF Файлы";
+"Image Cache" = "Кэш Изображений";
+
+/* Language Selection */
+"Language" = "Язык";
+"Select App Language" = "Выберите Язык Приложения";
+"Turkish" = "Турецкий";
+"English" = "Английский";
+
+/* Settings View - App Settings */
+"App Settings" = "Настройки Приложения";
+"Notifications" = "Уведомления";
+"Dark Mode" = "Темный Режим";
+"Language" = "Язык";
+"Haptic Feedback" = "Тактильная Обратная Связь";
+"Show Tutorial" = "Показать Обучение";
+
+/* Settings View - PDF Scanning Settings */
+"PDF Scanning Settings" = "Настройки Сканирования PDF";
+"OCR Language" = "Язык OCR";
+"Scan Quality" = "Качество Сканирования";
+"Auto Enhancement" = "Автоматическое Улучшение";
+"Auto OCR" = "Авто OCR";
+"Edge Detection" = "Обнаружение Краев";
+"Auto Rotate" = "Автоповорот";
+"Auto Save" = "Автосохранение";
+
+/* Settings View - PDF Settings */
+"PDF Settings" = "Настройки PDF";
+"PDF Compression" = "Сжатие PDF";
+"Document Format" = "Формат Документа";
+"Batch Scanning" = "Пакетное Сканирование";
+
+/* Settings View - Cloud & Storage */
+"Cloud & Storage" = "Облако и Хранилище";
+"Cloud Sync" = "Облачная Синхронизация";
+"Storage Usage" = "Использование Хранилища";
+
+/* Settings View - About */
+"About" = "О программе";
+"Rate App" = "Оценить Приложение";
+"Feedback" = "Обратная Связь";
+
+/* Settings View - Legal */
+"Legal" = "Правовые";
+"Privacy Policy" = "Политика Конфиденциальности";
+"Terms of Use" = "Условия Использования";
+
+/* Language Picker */
+"Language" = "Язык";
+"Language Description" = "Вы можете изменить это позже. Вы будете видеть контент на выбранном языке!";
+"Close" = "Закрыть";
+
+/* Premium Card */
+"Go Premium" = "Перейти на Премиум";
+"Premium Description" = "Неограниченное сканирование и расширенные функции";
+"Premium Active" = "Премиум Активен";
+"Premium Active Description" = "Все премиум функции активны";
+"PREMIUM" = "ПРЕМИУМ";
+
+/* About View */
+"About" = "О программе";
+"Version" = "Версия";
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "Профессиональное приложение для сканирования документов и создания PDF с расширенными возможностями OCR.";
+"© 2025 Modern PDF Scanner" = "© 2025 Современный PDF Сканер";
+"Made with ❤️ in Turkey" = "Сделано с ❤️ в Турции";
+
+/* Privacy View */
+"Privacy Policy" = "Политика Конфиденциальности";
+"Privacy Description" = "Нажмите кнопку ниже, чтобы просмотреть нашу политику конфиденциальности на веб-сайте.";
+"View Privacy Policy" = "Просмотреть Политику Конфиденциальности";
+
+/* Terms View */
+"Terms of Use" = "Условия Использования";
+"Terms Description" = "Нажмите кнопку ниже, чтобы просмотреть Стандартное Пользовательское Соглашение Apple.";
+"View Terms of Use" = "Просмотреть Условия Использования";
+
+/* Storage Details View */
+"Storage Usage" = "Использование Хранилища";
+"MB used" = "МБ использовано";
+"PDF Files" = "PDF Файлы";
+"Image Cache" = "Кэш Изображений";
+
+/* OCR Language Picker */
+"OCR Language" = "Язык OCR";
+"System Language" = "Использовать системный язык";
+"OCR for" = "OCR для";
+
+/* App Language Picker */
+"App Language" = "Язык Приложения";
+
+/* HomeView */
+"Modern PDF Scanner" = "Современный PDF Сканер";
+"Scan documents and convert them to PDF" = "Сканируйте документы и конвертируйте их в PDF";
+"Scan Document" = "Сканировать Документ";
+"Scanned Pages" = "Отсканированные Страницы";
+"page" = "страница";
+"pages" = "страницы";
+"Create PDF" = "Создать PDF";
+"Creating PDF..." = "Создание PDF...";
+"Clear All" = "Очистить Все";
+"PDF Generation" = "Генерация PDF";
+"No scanned images available to create PDF" = "Нет отсканированных изображений для создания PDF";
+"Failed to generate PDF: %@" = "Не удалось создать PDF: %@";
+
+/* LibraryView */
+"Library" = "Библиотека";
+"By Date" = "По Дате";
+"By Name" = "По Имени";
+"By Size" = "По Размеру";
+"Add from:" = "Добавить из:";
+"iPhone" = "iPhone";
+"Photos" = "Фотографии";
+"No PDFs Yet" = "Пока нет PDF";
+"Scan a document to create your first PDF" = "Отсканируйте документ, чтобы создать первый PDF";
+"Files" = "Файлы";
+
+/* ToolsView */
+"Scan" = "Сканировать";
+"ID Cards" = "ID Карты";
+"Extract Text" = "Извлечь Текст";
+"ID Photo\nEditor" = "Редактор\nID Фото";
+"Formula" = "Формула";
+"Photo\nTranslation" = "Перевод\nФото";
+"Book" = "Книга";
+"PPT" = "PPT";
+"Whiteboard" = "Доска";
+"Timestamp" = "Временная Метка";
+"Import" = "Импорт";
+"Import\nImages" = "Импорт\nИзображений";
+"Import\nFiles" = "Импорт\nФайлов";
+
+/* ImageEditView */
+"Processing..." = "Обработка...";
+"Basic Adjustments" = "Базовые Настройки";
+"Brightness" = "Яркость";
+"Contrast" = "Контраст";
+"Saturation" = "Насыщенность";
+"Effects" = "Эффекты";
+"Grayscale" = "Оттенки Серого";
+"Color Filters" = "Цветовые Фильтры";
+"Recognize Text" = "Распознать Текст";
+
+/* PDFPreviewView */
+"PDF Load Failed" = "Ошибка Загрузки PDF";
+"PDF file could not be opened" = "PDF файл не может быть открыт";
+"Loading PDF..." = "Загрузка PDF...";
+"PDF Ready" = "PDF Готов";
+"Export PDF" = "Экспорт PDF";
+
+/* OCRView */
+"Language:" = "Язык:";
+"Text Recognition" = "Распознавание Текста";
+"Close" = "Закрыть";
+"Share" = "Поделиться";
+"OCR Error" = "Ошибка OCR";
+"Recognizing Text..." = "Распознавание текста...";
+"Analyzing image for text content" = "Анализ изображения на предмет текстового содержимого";
+"Recognition Results" = "Результаты Распознавания";
+
+/* IDCardReaderView */
+"ID Card Reader" = "Считыватель ID Карт";
+"Point your ID card at the camera or select from gallery" = "Наведите ID карту на камеру или выберите из галереи";
+"Processing ID card..." = "Обработка ID карты...";
+"Please wait" = "Пожалуйста, подождите";
+"Open Camera" = "Открыть Камеру";
+"Select from Gallery" = "Выбрать из Галереи";
+"ID Reader" = "ID Считыватель";
+"ID Card Reading" = "Чтение ID Карты";
+
+/* Tab Bar */
+"Home" = "Главная";
+"Files" = "Файлы";
+"Library" = "Библиотека";
+"Tools" = "Инструменты";
+"Settings" = "Настройки";
+
+/* Action Bar */
+"Share" = "Поделиться";
+"Tags" = "Теги";
+"Merge" = "Объединить";
+"Delete" = "Удалить";
+
+/* Common Actions */
+"Select" = "Выбрать";
+"Cancel" = "Отмена";
+"OK" = "ОК";
+"Close" = "Закрыть";
+"File Not Found" = "Файл Не Найден";
+"This PDF file may have been deleted or moved." = "Этот PDF файл мог быть удален или перемещен.";
+"Add tags to selected items" = "Добавить теги к выбранным элементам";
+"Merge selected PDFs" = "Объединить выбранные PDF";
+"Select Folder" = "Выбрать Папку";
+
+/* Onboarding */
+"Welcome to PDF Scanner" = "Добро пожаловать в PDF Сканер";
+"Scan, Edit & Organize" = "Сканировать, Редактировать и Организовывать";
+"Transform your documents into digital PDFs with professional quality scanning." = "Преобразуйте ваши документы в цифровые PDF с профессиональным качеством сканирования.";
+"Smart Document Scanner" = "Умный Сканер Документов";
+"AI-Powered Recognition" = "Распознавание на основе ИИ";
+"Advanced OCR technology automatically detects and enhances your documents for crystal clear results." = "Передовая OCR технология автоматически обнаруживает и улучшает ваши документы для кристально чистых результатов.";
+"Powerful Editing Tools" = "Мощные Инструменты Редактирования";
+"Perfect Your Documents" = "Усовершенствуйте Ваши Документы";
+"Crop, rotate, adjust brightness and contrast to make your documents look professional." = "Обрезайте, поворачивайте, настраивайте яркость и контрастность, чтобы ваши документы выглядели профессионально.";
+"Organize & Share" = "Организовывать и Делиться";
+"Keep Everything Tidy" = "Держите Все в Порядке";
+"Create folders, add tags, and easily share your PDFs with others or save to cloud storage." = "Создавайте папки, добавляйте теги и легко делитесь вашими PDF с другими или сохраняйте в облачном хранилище.";
+"Ready to Start?" = "Готовы Начать?";
+"Let's Begin Scanning" = "Давайте Начнем Сканирование";
+"You're all set! Start scanning your first document and experience the power of modern PDF scanning." = "Вы готовы! Начните сканировать ваш первый документ и испытайте мощь современного PDF сканирования.";
+"Skip" = "Пропустить";
+"Get Started" = "Начать";
+
+/* Library Interface */
+"Other scanned" = "Другие отсканированные";
+
+/* PDF Viewer Interface */
+"Adjust" = "Настроить";
+"Share" = "Поделиться";
+"Remove" = "Удалить";
+"Take Note" = "Заметка";
+"Timestamp" = "Временная метка";
+"Pages" = "Страницы";
+"Page %d / %d" = "Страница %d / %d";
+
+/* Camera Interface */
+"Preparing camera..." = "Подготовка камеры...";
+"Single" = "Одиночный";
+"Batch" = "Пакетный";
+"Sign" = "Подпись";
+"To Word" = "В Word";
+"Q" = "Q";
+
+/* Document Scanner Interface */
+"Page 1/1" = "Страница 1/1";
+"Back" = "Назад";
+"Filters" = "Фильтры";
+"Enhance" = "Улучшить";
+"Crop" = "Обрезать";
+"Rotate" = "Повернуть";
+"Add Page" = "Добавить страницу";
+
+/* Filter/Adjustment Interface */
+"Cancel" = "Отмена";
+"Apply" = "Применить";
+"Live Preview" = "Живой предварительный просмотр";
+"Done" = "Готово";
+"Original" = "Оригинал";
+"Color" = "Цвет";
+"Gray" = "Серый";
+"Black and White" = "Черно-белый";
+"Brightness" = "Яркость";
+"Adjust image brightness" = "Настройте яркость изображения";
+"Contrast" = "Контраст";
+"Adjust image contrast" = "Настройте контраст изображения";
+
+/* PDF Viewer Interface */
+"Highlight" = "Выделить";
+"Hide" = "Скрыть";
+"Sign" = "Подпись";
+"Go Back" = "Вернуться";
+
+/* Signature Interface */
+"Sign" = "Подписать";
+"Save" = "Сохранить";
+
+/* Timestamp Interface */
+"Add Timestamp" = "Добавить временную метку";
+"Add date and time information to your PDF" = "Добавьте информацию о дате и времени в ваш PDF";
+"Location" = "Расположение";
+"Top Left" = "Верхний левый";
+"Top Right" = "Верхний правый";
+"Bottom Left" = "Нижний левый";
+"Bottom Right" = "Нижний правый";
+"Center" = "Центр";
+"Format" = "Формат";
+"Full Format" = "Полный формат";
+"Date Only" = "Только дата";
+"Time Only" = "Только время";
+"Short Format" = "Короткий формат";
+"Custom Format" = "Пользовательский формат";
+"Content" = "Содержание";
+"Add Date" = "Добавить дату";
+"Add Time" = "Добавить время";
+"Font Size" = "Размер шрифта";
+"Size" = "Размер";
+"Color" = "Цвет";
+"Font Color" = "Цвет шрифта";
+"Background" = "Фон";
+
+/* Share Sheet Interface */
+"Preview" = "Предварительный просмотр";
+"More" = "Больше";
+"Copy" = "Копировать";
+"Mark up" = "Разметка";
+"Print" = "Печать";
+"Save to Files" = "Сохранить в файлы";
+"Add Tag" = "Добавить тег";
+"Use as Ringtone" = "Использовать как рингтон";
+"Edit Actions" = "Редактировать действия";
+
+/* RevenueCat */
+"Loading plans..." = "Загрузка планов...";
+
+/* Premium/Paywall */
+"Open Premium" = "Открыть Премиум";
+"Unlimited PDF Scanning" = "Неограниченное Сканирование PDF";
+"Advanced OCR Technology" = "Передовая OCR Технология";
+"Smart Text Recognition" = "Умное Распознавание Текста";
+"Premium Features" = "Премиум Функции";
+"Weekly" = "Еженедельно";
+"Monthly" = "Ежемесячно";
+"Yearly" = "Ежегодно";
+"Lifetime" = "Пожизненно";
+"83% SAVING" = "83% ЭКОНОМИЯ";
+"BEST VALUE" = "ЛУЧШАЯ ЦЕНА";
+"Open Now" = "Открыть Сейчас";
+"Restore" = "Восстановить";
+"Privacy Policy" = "Политика Конфиденциальности";
+"Terms of Use" = "Условия Использования";
+
+
+

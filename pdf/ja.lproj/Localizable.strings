@@ -1,0 +1,463 @@
+/* Japanese Localization */
+
+/* Common */
+"OK" = "OK";
+"Cancel" = "キャンセル";
+"Save" = "保存";
+"Delete" = "削除";
+"Edit" = "編集";
+"Share" = "共有";
+"Close" = "閉じる";
+"Done" = "完了";
+"Back" = "戻る";
+"Next" = "次へ";
+"Previous" = "前へ";
+"Settings" = "設定";
+"Library" = "ライブラリ";
+"Scan" = "スキャン";
+"Tools" = "ツール";
+
+/* Home View */
+"Modern PDF Scanner" = "モダンPDFスキャナー";
+"Scan documents and convert them to PDF" = "文書をスキャンしてPDFに変換";
+"Scan Document" = "文書をスキャン";
+"Scanned Pages" = "スキャンされたページ";
+"page" = "ページ";
+"pages" = "ページ";
+"Create PDF" = "PDFを作成";
+"Creating PDF..." = "PDFを作成中...";
+"Clear All" = "すべてクリア";
+
+/* Settings View */
+"Appearance" = "外観";
+"Light" = "ライト";
+"Dark" = "ダーク";
+"System" = "システム";
+"Always use light appearance" = "常にライト外観を使用";
+"Always use dark appearance" = "常にダーク外観を使用";
+"Follow system setting" = "システム設定に従う";
+
+"Scanning Settings" = "スキャン設定";
+"Scan Quality" = "スキャン品質";
+"High quality means larger file size" = "高品質はより大きなファイルサイズを意味します";
+"Low" = "低";
+"Medium" = "中";
+"High" = "高";
+"Auto Enhancement" = "自動強化";
+"Automatically enhance images" = "画像を自動的に強化";
+"Auto Save" = "自動保存";
+"Automatically save scanned documents" = "スキャンされた文書を自動保存";
+
+"OCR Settings" = "OCR設定";
+"OCR Language" = "OCR言語";
+"Select language for text recognition" = "テキスト認識の言語を選択";
+"Automatic" = "自動";
+"Turkish" = "トルコ語";
+"English" = "英語";
+"Spanish" = "スペイン語";
+"French" = "フランス語";
+"German" = "ドイツ語";
+
+"Storage" = "ストレージ";
+"Storage Usage" = "ストレージ使用量";
+"Used space" = "使用済み容量";
+"Details" = "詳細";
+
+"App Preferences" = "アプリ設定";
+"Haptic Feedback" = "ハプティックフィードバック";
+"Tactile feedback" = "触覚フィードバック";
+"Show Tutorial" = "チュートリアルを表示";
+"Show tutorial on first use" = "初回使用時にチュートリアルを表示";
+
+"Support & Legal" = "サポートと法的";
+"About" = "について";
+"App information" = "アプリ情報";
+"Privacy Policy" = "プライバシーポリシー";
+"Data privacy and protection" = "データプライバシーと保護";
+"Terms of Use" = "利用規約";
+"Service terms and conditions" = "サービス利用規約";
+"Rate App" = "アプリを評価";
+"Rate on App Store" = "App Storeで評価";
+
+/* About View */
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "高度なOCR機能を備えたプロフェッショナルな文書スキャンとPDF作成アプリ。";
+"© 2025 Modern PDF Scanner" = "© 2025 モダンPDFスキャナー";
+"Made with ❤️ in Turkey" = "トルコで❤️と共に作られました";
+
+/* Privacy View */
+"Modern PDF Scanner is designed to protect user privacy." = "モダンPDFスキャナーはユーザーのプライバシーを保護するように設計されています。";
+"Data Collection" = "データ収集";
+"Our app stores your scanned documents on your device and does not share them with any third parties." = "私たちのアプリはスキャンされた文書をデバイスに保存し、第三者と共有しません。";
+"Permissions" = "権限";
+"Camera and Photo Library access is used only for document scanning and saving operations." = "カメラとフォトライブラリへのアクセスは、文書スキャンと保存操作にのみ使用されます。";
+
+/* Terms View */
+"By using this app, you agree to the following terms." = "このアプリを使用することで、以下の条件に同意したことになります。";
+"Usage Terms" = "利用規約";
+"• Use the app for legal purposes\n• Do not violate copyright\n• Do not misuse the app" = "• アプリを合法的な目的で使用する\n• 著作権を侵害しない\n• アプリを悪用しない";
+
+/* Storage Details View */
+"Storage Usage" = "ストレージ使用量";
+"MB used" = "使用済みMB";
+"PDF Files" = "PDFファイル";
+"Image Cache" = "画像キャッシュ";
+
+/* Language Selection */
+"Language" = "言語";
+"Select App Language" = "アプリ言語を選択";
+"Turkish" = "トルコ語";
+"English" = "英語";
+
+/* Settings View - App Settings */
+"App Settings" = "アプリ設定";
+"Notifications" = "通知";
+"Dark Mode" = "ダークモード";
+"Language" = "言語";
+"Haptic Feedback" = "ハプティックフィードバック";
+"Show Tutorial" = "チュートリアルを表示";
+
+/* Settings View - PDF Scanning Settings */
+"PDF Scanning Settings" = "PDFスキャン設定";
+"OCR Language" = "OCR言語";
+"Scan Quality" = "スキャン品質";
+"Auto Enhancement" = "自動強化";
+"Auto OCR" = "自動OCR";
+"Edge Detection" = "エッジ検出";
+"Auto Rotate" = "自動回転";
+"Auto Save" = "自動保存";
+
+/* Settings View - PDF Settings */
+"PDF Settings" = "PDF設定";
+"PDF Compression" = "PDF圧縮";
+"Document Format" = "文書フォーマット";
+"Batch Scanning" = "バッチスキャン";
+
+/* Settings View - Cloud & Storage */
+"Cloud & Storage" = "クラウドとストレージ";
+"Cloud Sync" = "クラウド同期";
+"Storage Usage" = "ストレージ使用量";
+
+/* Settings View - About */
+"About" = "について";
+"Rate App" = "アプリを評価";
+"Feedback" = "フィードバック";
+
+/* Settings View - Legal */
+"Legal" = "法的";
+"Privacy Policy" = "プライバシーポリシー";
+"Terms of Use" = "利用規約";
+
+/* Language Picker */
+"Language" = "言語";
+"Language Description" = "後でこれを変更できます。選択した言語でコンテンツが表示されます！";
+"Close" = "閉じる";
+
+/* Premium Card */
+"Go Premium" = "プレミアムに進む";
+"Premium Description" = "無制限スキャンと高度な機能";
+"Premium Active" = "プレミアムアクティブ";
+"Premium Active Description" = "すべてのプレミアム機能がアクティブ";
+"PREMIUM" = "プレミアム";
+
+/* About View */
+"About" = "について";
+"Version" = "バージョン";
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "高度なOCR機能を備えたプロフェッショナルな文書スキャンとPDF作成アプリ。";
+"© 2025 Modern PDF Scanner" = "© 2025 モダンPDFスキャナー";
+"Made with ❤️ in Turkey" = "トルコで❤️と共に作られました";
+
+/* Privacy View */
+"Privacy Policy" = "プライバシーポリシー";
+"Privacy Description" = "下のボタンをクリックして、ウェブサイトでプライバシーポリシーを表示します。";
+"View Privacy Policy" = "プライバシーポリシーを表示";
+
+/* Terms View */
+"Terms of Use" = "利用規約";
+"Terms Description" = "下のボタンをクリックして、Appleの標準EULAを表示します。";
+"View Terms of Use" = "利用規約を表示";
+
+/* Storage Details View */
+"Storage Usage" = "ストレージ使用量";
+"MB used" = "使用済みMB";
+"PDF Files" = "PDFファイル";
+"Image Cache" = "画像キャッシュ";
+
+/* OCR Language Picker */
+"OCR Language" = "OCR言語";
+"System Language" = "システム言語を使用";
+"OCR for" = "OCR for";
+
+/* App Language Picker */
+"App Language" = "アプリ言語";
+
+/* HomeView */
+"Modern PDF Scanner" = "モダンPDFスキャナー";
+"Scan documents and convert them to PDF" = "文書をスキャンしてPDFに変換";
+"Scan Document" = "文書をスキャン";
+"Scanned Pages" = "スキャンされたページ";
+"page" = "ページ";
+"pages" = "ページ";
+"Create PDF" = "PDFを作成";
+"Creating PDF..." = "PDFを作成中...";
+"Clear All" = "すべてクリア";
+"PDF Generation" = "PDF生成";
+"No scanned images available to create PDF" = "PDFを作成するためのスキャン画像がありません";
+"Failed to generate PDF: %@" = "PDFの生成に失敗しました：%@";
+
+/* LibraryView */
+"Library" = "ライブラリ";
+"By Date" = "日付順";
+"By Name" = "名前順";
+"By Size" = "サイズ順";
+"Add from:" = "追加元：";
+"iPhone" = "iPhone";
+"Photos" = "写真";
+"No PDFs Yet" = "まだPDFがありません";
+"Scan a document to create your first PDF" = "最初のPDFを作成するために文書をスキャンしてください";
+"Files" = "ファイル";
+
+/* ToolsView */
+"Scan" = "スキャン";
+"ID Cards" = "IDカード";
+"Extract Text" = "テキスト抽出";
+"ID Photo\nEditor" = "ID写真\nエディター";
+"Formula" = "数式";
+"Photo\nTranslation" = "写真\n翻訳";
+"Book" = "本";
+"PPT" = "PPT";
+"Whiteboard" = "ホワイトボード";
+"Timestamp" = "タイムスタンプ";
+"Import" = "インポート";
+"Import\nImages" = "画像を\nインポート";
+"Import\nFiles" = "ファイルを\nインポート";
+
+/* ImageEditView */
+"Processing..." = "処理中...";
+"Basic Adjustments" = "基本調整";
+"Brightness" = "明度";
+"Contrast" = "コントラスト";
+"Saturation" = "彩度";
+"Effects" = "エフェクト";
+"Grayscale" = "グレースケール";
+"Color Filters" = "カラーフィルター";
+"Recognize Text" = "テキストを認識";
+
+/* PDFPreviewView */
+"PDF Load Failed" = "PDF読み込み失敗";
+"PDF file could not be opened" = "PDFファイルを開けませんでした";
+"Loading PDF..." = "PDFを読み込み中...";
+"PDF Ready" = "PDF準備完了";
+"Export PDF" = "PDFをエクスポート";
+
+/* OCRView */
+"Language:" = "言語：";
+"Text Recognition" = "テキスト認識";
+"Close" = "閉じる";
+"Share" = "共有";
+"OCR Error" = "OCRエラー";
+"Recognizing Text..." = "テキストを認識中...";
+"Analyzing image for text content" = "テキストコンテンツの画像を分析中";
+"Recognition Results" = "認識結果";
+
+/* IDCardReaderView */
+"ID Card Reader" = "IDカードリーダー";
+"Point your ID card at the camera or select from gallery" = "IDカードをカメラに向けるか、ギャラリーから選択してください";
+"Processing ID card..." = "IDカードを処理中...";
+"Please wait" = "お待ちください";
+"Open Camera" = "カメラを開く";
+"Select from Gallery" = "ギャラリーから選択";
+"ID Reader" = "IDリーダー";
+"ID Card Reading" = "IDカード読み取り";
+
+/* Tab Bar */
+"Home" = "ホーム";
+"Files" = "ファイル";
+"Library" = "ライブラリ";
+"Tools" = "ツール";
+"Settings" = "設定";
+
+/* Action Bar */
+"Share" = "共有";
+"Tags" = "タグ";
+"Merge" = "マージ";
+"Delete" = "削除";
+
+/* Common Actions */
+"Select" = "選択";
+"Cancel" = "キャンセル";
+"OK" = "OK";
+"Close" = "閉じる";
+"File Not Found" = "ファイルが見つかりません";
+"This PDF file may have been deleted or moved." = "このPDFファイルは削除または移動された可能性があります。";
+"Add tags to selected items" = "選択したアイテムにタグを追加";
+"Merge selected PDFs" = "選択したPDFをマージ";
+"Select Folder" = "フォルダを選択";
+
+/* Onboarding */
+"Welcome to PDF Scanner" = "PDFスキャナーへようこそ";
+"Scan, Edit & Organize" = "スキャン、編集、整理";
+"Transform your documents into digital PDFs with professional quality scanning." = "プロフェッショナル品質のスキャンで文書をデジタルPDFに変換。";
+"Smart Document Scanner" = "スマート文書スキャナー";
+"AI-Powered Recognition" = "AI搭載認識";
+"Advanced OCR technology automatically detects and enhances your documents for crystal clear results." = "高度なOCR技術が文書を自動検出・強化し、クリアな結果を提供。";
+"Powerful Editing Tools" = "強力な編集ツール";
+"Perfect Your Documents" = "文書を完璧に";
+"Crop, rotate, adjust brightness and contrast to make your documents look professional." = "文書をプロフェッショナルに見せるために、クロップ、回転、明度・コントラスト調整。";
+"Organize & Share" = "整理と共有";
+"Keep Everything Tidy" = "すべてを整理整頓";
+"Create folders, add tags, and easily share your PDFs with others or save to cloud storage." = "フォルダ作成、タグ追加、PDFの簡単共有やクラウドストレージ保存。";
+"Ready to Start?" = "始める準備はできましたか？";
+"Let's Begin Scanning" = "スキャンを始めましょう";
+"You're all set! Start scanning your first document and experience the power of modern PDF scanning." = "準備完了！最初の文書をスキャンして、モダンPDFスキャンの力を体験してください。";
+"Skip" = "スキップ";
+"Get Started" = "始める";
+
+/* Library Interface */
+"Other scanned" = "その他のスキャン";
+
+/* PDF Viewer Interface */
+"Adjust" = "調整";
+"Share" = "共有";
+"Remove" = "削除";
+"Take Note" = "メモ";
+"Timestamp" = "タイムスタンプ";
+"Pages" = "ページ";
+"Page %d / %d" = "ページ %d / %d";
+
+/* Camera Interface */
+"Preparing camera..." = "カメラを準備中...";
+"Single" = "単体";
+"Batch" = "バッチ";
+"Sign" = "署名";
+"To Word" = "Wordへ";
+"Q" = "Q";
+
+/* Document Scanner Interface */
+"Page 1/1" = "ページ 1/1";
+"Back" = "戻る";
+"Filters" = "フィルター";
+"Enhance" = "強化";
+"Crop" = "クロップ";
+"Rotate" = "回転";
+"Add Page" = "ページを追加";
+
+/* Filter/Adjustment Interface */
+"Cancel" = "キャンセル";
+"Apply" = "適用";
+"Live Preview" = "ライブプレビュー";
+"Done" = "完了";
+"Original" = "オリジナル";
+"Color" = "カラー";
+"Gray" = "グレー";
+"Black and White" = "白黒";
+"Brightness" = "明度";
+"Adjust image brightness" = "画像の明度を調整";
+"Contrast" = "コントラスト";
+"Adjust image contrast" = "画像のコントラストを調整";
+
+/* PDF Viewer Interface */
+"Highlight" = "ハイライト";
+"Hide" = "非表示";
+"Sign" = "署名";
+"Go Back" = "戻る";
+
+/* Signature Interface */
+"Sign" = "署名";
+"Save" = "保存";
+
+/* Timestamp Interface */
+"Add Timestamp" = "タイムスタンプを追加";
+"Add date and time information to your PDF" = "PDFに日時情報を追加";
+"Location" = "位置";
+"Top Left" = "左上";
+"Top Right" = "右上";
+"Bottom Left" = "左下";
+"Bottom Right" = "右下";
+"Center" = "中央";
+"Format" = "フォーマット";
+"Full Format" = "完全フォーマット";
+"Date Only" = "日付のみ";
+"Time Only" = "時刻のみ";
+"Short Format" = "短縮フォーマット";
+"Custom Format" = "カスタムフォーマット";
+"Content" = "コンテンツ";
+"Add Date" = "日付を追加";
+"Add Time" = "時刻を追加";
+"Font Size" = "フォントサイズ";
+"Size" = "サイズ";
+"Color" = "カラー";
+"Font Color" = "フォントカラー";
+"Background" = "背景";
+
+/* Share Sheet Interface */
+"Preview" = "プレビュー";
+"More" = "その他";
+"Copy" = "コピー";
+"Mark up" = "マークアップ";
+"Print" = "印刷";
+"Save to Files" = "ファイルに保存";
+"Add Tag" = "タグを追加";
+"Use as Ringtone" = "着信音として使用";
+"Edit Actions" = "アクションを編集";
+
+/* RevenueCat */
+"Loading plans..." = "プランを読み込み中...";
+
+/* Premium/Paywall */
+"Open Premium" = "プレミアムを開く";
+"Unlimited PDF Scanning" = "無制限PDFスキャン";
+"Advanced OCR Technology" = "高度なOCR技術";
+"Smart Text Recognition" = "スマートテキスト認識";
+"Premium Features" = "プレミアム機能";
+"Weekly" = "週間";
+"Monthly" = "月間";
+"Yearly" = "年間";
+"Lifetime" = "生涯";
+"83% SAVING" = "83%節約";
+"BEST VALUE" = "最高の価値";
+"Open Now" = "今すぐ開く";
+"Restore" = "復元";
+"Privacy Policy" = "プライバシーポリシー";
+"Terms of Use" = "利用規約";
+"Word Timestamp" = "Wordタイムスタンプ";
+"To Excel" = "Excelへ";
+"To PPT" = "PPTへ";
+"PDF to\nImage" = "PDFを\n画像に";
+"PDF to Long\nImage" = "PDFを長い\n画像に";
+
+/* ToolsView - Edit */
+"Sign" = "署名";
+"Add Watermark" = "透かしを追加";
+"Smart Erase" = "スマート消去";
+"Remove Marks" = "マークを削除";
+"Enhance\nPhoto" = "写真を\n強化";
+"Merge\nFiles" = "ファイルを\n結合";
+"Extract\nPages" = "ページを\n抽出";
+"Reorder\nPages" = "ページを\n並べ替え";
+
+/* ToolsView - Education */
+"Question\nSet" = "問題\nセット";
+"Create\nQuiz" = "クイズを\n作成";
+"Prepare\nExam" = "試験を\n準備";
+"Statistics" = "統計";
+
+/* Camera / Common */
+"Single" = "単一";
+"Batch" = "一括";
+"Processing text..." = "テキストを処理中...";
+"Preparing camera..." = "カメラを準備中...";
+"photo" = "枚";
+"photos" = "枚";
+
+/* Library / Document Picker */
+"Select files" = "ファイルを選択";
+"Selected Photos" = "選択した写真";
+"Folder name" = "フォルダ名";
+"Create a new folder" = "新しいフォルダを作成";
+"Delete PDF" = "PDFを削除";
+"Delete Folder" = "フォルダを削除";
+"New Folder" = "新規フォルダ";
+"Rename" = "名前変更";
+"Files" = "ファイル";
+"No PDFs Yet" = "PDFはまだありません";
+"Scan a document to create your first PDF" = "最初のPDFを作成するにはドキュメントをスキャンしてください";

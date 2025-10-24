@@ -1,0 +1,424 @@
+/* Portuguese Localization */
+
+/* Common */
+"OK" = "OK";
+"Cancel" = "Cancelar";
+"Save" = "Salvar";
+"Delete" = "Excluir";
+"Edit" = "Editar";
+"Share" = "Compartilhar";
+"Close" = "Fechar";
+"Done" = "Concluído";
+"Back" = "Voltar";
+"Next" = "Próximo";
+"Previous" = "Anterior";
+"Settings" = "Configurações";
+"Library" = "Biblioteca";
+"Scan" = "Escanear";
+"Tools" = "Ferramentas";
+
+/* Home View */
+"Modern PDF Scanner" = "Scanner PDF Moderno";
+"Scan documents and convert them to PDF" = "Escaneie documentos e converta-os para PDF";
+"Scan Document" = "Escanear Documento";
+"Scanned Pages" = "Páginas Escaneadas";
+"page" = "página";
+"pages" = "páginas";
+"Create PDF" = "Criar PDF";
+"Creating PDF..." = "Criando PDF...";
+"Clear All" = "Limpar Tudo";
+
+/* Settings View */
+"Appearance" = "Aparência";
+"Light" = "Claro";
+"Dark" = "Escuro";
+"System" = "Sistema";
+"Always use light appearance" = "Sempre usar aparência clara";
+"Always use dark appearance" = "Sempre usar aparência escura";
+"Follow system setting" = "Seguir configuração do sistema";
+
+"Scanning Settings" = "Configurações de Escaneamento";
+"Scan Quality" = "Qualidade de Escaneamento";
+"High quality means larger file size" = "Alta qualidade significa arquivo maior";
+"Low" = "Baixo";
+"Medium" = "Médio";
+"High" = "Alto";
+"Auto Enhancement" = "Melhoria Automática";
+"Automatically enhance images" = "Melhorar imagens automaticamente";
+"Auto Save" = "Salvamento Automático";
+"Automatically save scanned documents" = "Salvar documentos escaneados automaticamente";
+
+"OCR Settings" = "Configurações OCR";
+"OCR Language" = "Idioma OCR";
+"Select language for text recognition" = "Selecione o idioma para reconhecimento de texto";
+"Automatic" = "Automático";
+"Turkish" = "Turco";
+"English" = "Inglês";
+"Spanish" = "Espanhol";
+"French" = "Francês";
+"German" = "Alemão";
+
+"Storage" = "Armazenamento";
+"Storage Usage" = "Uso de Armazenamento";
+"Used space" = "Espaço usado";
+"Details" = "Detalhes";
+
+"App Preferences" = "Preferências do App";
+"Haptic Feedback" = "Feedback Háptico";
+"Tactile feedback" = "Feedback tátil";
+"Show Tutorial" = "Mostrar Tutorial";
+"Show tutorial on first use" = "Mostrar tutorial no primeiro uso";
+
+"Support & Legal" = "Suporte e Legal";
+"About" = "Sobre";
+"App information" = "Informações do app";
+"Privacy Policy" = "Política de Privacidade";
+"Data privacy and protection" = "Privacidade e proteção de dados";
+"Terms of Use" = "Termos de Uso";
+"Service terms and conditions" = "Termos e condições do serviço";
+"Rate App" = "Avaliar App";
+"Rate on App Store" = "Avaliar na App Store";
+
+/* About View */
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "App profissional de escaneamento de documentos e criação de PDF com capacidades OCR avançadas.";
+"© 2025 Modern PDF Scanner" = "© 2025 Scanner PDF Moderno";
+"Made with ❤️ in Turkey" = "Feito com ❤️ na Turquia";
+
+/* Privacy View */
+"Modern PDF Scanner is designed to protect user privacy." = "O Scanner PDF Moderno é projetado para proteger a privacidade do usuário.";
+"Data Collection" = "Coleta de Dados";
+"Our app stores your scanned documents on your device and does not share them with any third parties." = "Nosso app armazena seus documentos escaneados em seu dispositivo e não os compartilha com terceiros.";
+"Permissions" = "Permissões";
+"Camera and Photo Library access is used only for document scanning and saving operations." = "O acesso à câmera e biblioteca de fotos é usado apenas para operações de escaneamento e salvamento de documentos.";
+
+/* Terms View */
+"By using this app, you agree to the following terms." = "Ao usar este app, você concorda com os seguintes termos.";
+"Usage Terms" = "Termos de Uso";
+"• Use the app for legal purposes\n• Do not violate copyright\n• Do not misuse the app" = "• Use o app para fins legais\n• Não viole direitos autorais\n• Não use mal o app";
+
+/* Storage Details View */
+"Storage Usage" = "Uso de Armazenamento";
+"MB used" = "MB usados";
+"PDF Files" = "Arquivos PDF";
+"Image Cache" = "Cache de Imagens";
+
+/* Language Selection */
+"Language" = "Idioma";
+"Select App Language" = "Selecionar Idioma do App";
+"Turkish" = "Turco";
+"English" = "Inglês";
+
+/* Settings View - App Settings */
+"App Settings" = "Configurações do App";
+"Notifications" = "Notificações";
+"Dark Mode" = "Modo Escuro";
+"Language" = "Idioma";
+"Haptic Feedback" = "Feedback Háptico";
+"Show Tutorial" = "Mostrar Tutorial";
+
+/* Settings View - PDF Scanning Settings */
+"PDF Scanning Settings" = "Configurações de Escaneamento PDF";
+"OCR Language" = "Idioma OCR";
+"Scan Quality" = "Qualidade de Escaneamento";
+"Auto Enhancement" = "Melhoria Automática";
+"Auto OCR" = "OCR Automático";
+"Edge Detection" = "Detecção de Bordas";
+"Auto Rotate" = "Rotação Automática";
+"Auto Save" = "Salvamento Automático";
+
+/* Settings View - PDF Settings */
+"PDF Settings" = "Configurações PDF";
+"PDF Compression" = "Compressão PDF";
+"Document Format" = "Formato de Documento";
+"Batch Scanning" = "Escaneamento em Lote";
+
+/* Settings View - Cloud & Storage */
+"Cloud & Storage" = "Nuvem e Armazenamento";
+"Cloud Sync" = "Sincronização na Nuvem";
+"Storage Usage" = "Uso de Armazenamento";
+
+/* Settings View - About */
+"About" = "Sobre";
+"Rate App" = "Avaliar App";
+"Feedback" = "Feedback";
+
+/* Settings View - Legal */
+"Legal" = "Legal";
+"Privacy Policy" = "Política de Privacidade";
+"Terms of Use" = "Termos de Uso";
+
+/* Language Picker */
+"Language" = "Idioma";
+"Language Description" = "Você pode alterar isso mais tarde. Você verá o conteúdo no idioma que escolher!";
+"Close" = "Fechar";
+
+/* Premium Card */
+"Go Premium" = "Ir Premium";
+"Premium Description" = "Escaneamento ilimitado e recursos avançados";
+"Premium Active" = "Premium Ativo";
+"Premium Active Description" = "Todos os recursos premium estão ativos";
+"PREMIUM" = "PREMIUM";
+
+/* About View */
+"About" = "Sobre";
+"Version" = "Versão";
+"Professional document scanning and PDF creation app with advanced OCR capabilities." = "App profissional de escaneamento de documentos e criação de PDF com capacidades OCR avançadas.";
+"© 2025 Modern PDF Scanner" = "© 2025 Scanner PDF Moderno";
+"Made with ❤️ in Turkey" = "Feito com ❤️ na Turquia";
+
+/* Privacy View */
+"Privacy Policy" = "Política de Privacidade";
+"Privacy Description" = "Clique no botão abaixo para ver nossa política de privacidade no site.";
+"View Privacy Policy" = "Ver Política de Privacidade";
+
+/* Terms View */
+"Terms of Use" = "Termos de Uso";
+"Terms Description" = "Clique no botão abaixo para ver o EULA Padrão da Apple.";
+"View Terms of Use" = "Ver Termos de Uso";
+
+/* Storage Details View */
+"Storage Usage" = "Uso de Armazenamento";
+"MB used" = "MB usados";
+"PDF Files" = "Arquivos PDF";
+"Image Cache" = "Cache de Imagens";
+
+/* OCR Language Picker */
+"OCR Language" = "Idioma OCR";
+"System Language" = "Usar idioma do sistema";
+"OCR for" = "OCR para";
+
+/* App Language Picker */
+"App Language" = "Idioma do App";
+
+/* HomeView */
+"Modern PDF Scanner" = "Scanner PDF Moderno";
+"Scan documents and convert them to PDF" = "Escaneie documentos e converta-os para PDF";
+"Scan Document" = "Escanear Documento";
+"Scanned Pages" = "Páginas Escaneadas";
+"page" = "página";
+"pages" = "páginas";
+"Create PDF" = "Criar PDF";
+"Creating PDF..." = "Criando PDF...";
+"Clear All" = "Limpar Tudo";
+"PDF Generation" = "Geração PDF";
+"No scanned images available to create PDF" = "Nenhuma imagem escaneada disponível para criar PDF";
+"Failed to generate PDF: %@" = "Falha ao gerar PDF: %@";
+
+/* LibraryView */
+"Library" = "Biblioteca";
+"By Date" = "Por Data";
+"By Name" = "Por Nome";
+"By Size" = "Por Tamanho";
+"Add from:" = "Adicionar de:";
+"iPhone" = "iPhone";
+"Photos" = "Fotos";
+"No PDFs Yet" = "Ainda sem PDFs";
+"Scan a document to create your first PDF" = "Escaneie um documento para criar seu primeiro PDF";
+"Files" = "Arquivos";
+
+/* ToolsView */
+"Scan" = "Escanear";
+"ID Cards" = "Cartões de Identidade";
+"Extract Text" = "Extrair Texto";
+"ID Photo\nEditor" = "Editor de\nFoto de ID";
+"Formula" = "Fórmula";
+"Photo\nTranslation" = "Tradução de\nFoto";
+"Book" = "Livro";
+"PPT" = "PPT";
+"Whiteboard" = "Quadro Branco";
+"Timestamp" = "Timestamp";
+"Import" = "Importar";
+"Import\nImages" = "Importar\nImagens";
+"Import\nFiles" = "Importar\nArquivos";
+
+/* ImageEditView */
+"Processing..." = "Processando...";
+"Basic Adjustments" = "Ajustes Básicos";
+"Brightness" = "Brilho";
+"Contrast" = "Contraste";
+"Saturation" = "Saturação";
+"Effects" = "Efeitos";
+"Grayscale" = "Escala de Cinza";
+"Color Filters" = "Filtros de Cor";
+"Recognize Text" = "Reconhecer Texto";
+
+/* PDFPreviewView */
+"PDF Load Failed" = "Falha no Carregamento PDF";
+"PDF file could not be opened" = "Arquivo PDF não pôde ser aberto";
+"Loading PDF..." = "Carregando PDF...";
+"PDF Ready" = "PDF Pronto";
+"Export PDF" = "Exportar PDF";
+
+/* OCRView */
+"Language:" = "Idioma:";
+"Text Recognition" = "Reconhecimento de Texto";
+"Close" = "Fechar";
+"Share" = "Compartilhar";
+"OCR Error" = "Erro OCR";
+"Recognizing Text..." = "Reconhecendo texto...";
+"Analyzing image for text content" = "Analisando imagem para conteúdo de texto";
+"Recognition Results" = "Resultados do Reconhecimento";
+
+/* IDCardReaderView */
+"ID Card Reader" = "Leitor de Cartão de Identidade";
+"Point your ID card at the camera or select from gallery" = "Aponte seu cartão de identidade para a câmera ou selecione da galeria";
+"Processing ID card..." = "Processando cartão de identidade...";
+"Please wait" = "Por favor, aguarde";
+"Open Camera" = "Abrir Câmera";
+"Select from Gallery" = "Selecionar da Galeria";
+"ID Reader" = "Leitor de ID";
+"ID Card Reading" = "Leitura de Cartão de Identidade";
+
+/* Tab Bar */
+"Home" = "Início";
+"Files" = "Arquivos";
+"Library" = "Biblioteca";
+"Tools" = "Ferramentas";
+"Settings" = "Configurações";
+
+/* Action Bar */
+"Share" = "Compartilhar";
+"Tags" = "Tags";
+"Merge" = "Mesclar";
+"Delete" = "Excluir";
+
+/* Common Actions */
+"Select" = "Selecionar";
+"Cancel" = "Cancelar";
+"OK" = "OK";
+"Close" = "Fechar";
+"File Not Found" = "Arquivo Não Encontrado";
+"This PDF file may have been deleted or moved." = "Este arquivo PDF pode ter sido excluído ou movido.";
+"Add tags to selected items" = "Adicionar tags aos itens selecionados";
+"Merge selected PDFs" = "Mesclar PDFs selecionados";
+"Select Folder" = "Selecionar Pasta";
+
+/* Onboarding */
+"Welcome to PDF Scanner" = "Bem-vindo ao Scanner PDF";
+"Scan, Edit & Organize" = "Escanear, Editar e Organizar";
+"Transform your documents into digital PDFs with professional quality scanning." = "Transforme seus documentos em PDFs digitais com escaneamento de qualidade profissional.";
+"Smart Document Scanner" = "Scanner de Documentos Inteligente";
+"AI-Powered Recognition" = "Reconhecimento com IA";
+"Advanced OCR technology automatically detects and enhances your documents for crystal clear results." = "Tecnologia OCR avançada detecta e melhora automaticamente seus documentos para resultados cristalinos.";
+"Powerful Editing Tools" = "Ferramentas de Edição Poderosas";
+"Perfect Your Documents" = "Perfeicione Seus Documentos";
+"Crop, rotate, adjust brightness and contrast to make your documents look professional." = "Recorte, gire, ajuste brilho e contraste para tornar seus documentos profissionais.";
+"Organize & Share" = "Organizar e Compartilhar";
+"Keep Everything Tidy" = "Mantenha Tudo Organizado";
+"Create folders, add tags, and easily share your PDFs with others or save to cloud storage." = "Crie pastas, adicione tags e compartilhe facilmente seus PDFs com outros ou salve no armazenamento em nuvem.";
+"Ready to Start?" = "Pronto para Começar?";
+"Let's Begin Scanning" = "Vamos Começar a Escanear";
+"You're all set! Start scanning your first document and experience the power of modern PDF scanning." = "Você está pronto! Comece a escanear seu primeiro documento e experimente o poder do escaneamento PDF moderno.";
+"Skip" = "Pular";
+"Get Started" = "Começar";
+
+/* Library Interface */
+"Other scanned" = "Outros escaneados";
+
+/* PDF Viewer Interface */
+"Adjust" = "Ajustar";
+"Share" = "Compartilhar";
+"Remove" = "Remover";
+"Take Note" = "Anotar";
+"Timestamp" = "Timestamp";
+"Pages" = "Páginas";
+"Page %d / %d" = "Página %d / %d";
+
+/* Camera Interface */
+"Preparing camera..." = "Preparando câmera...";
+"Single" = "Único";
+"Batch" = "Lote";
+"Sign" = "Assinar";
+"To Word" = "Para Word";
+"Q" = "Q";
+
+/* Document Scanner Interface */
+"Page 1/1" = "Página 1/1";
+"Back" = "Voltar";
+"Filters" = "Filtros";
+"Enhance" = "Melhorar";
+"Crop" = "Recortar";
+"Rotate" = "Girar";
+"Add Page" = "Adicionar Página";
+
+/* Filter/Adjustment Interface */
+"Cancel" = "Cancelar";
+"Apply" = "Aplicar";
+"Live Preview" = "Visualização ao Vivo";
+"Done" = "Concluído";
+"Original" = "Original";
+"Color" = "Cor";
+"Gray" = "Cinza";
+"Black and White" = "Preto e Branco";
+"Brightness" = "Brilho";
+"Adjust image brightness" = "Ajustar brilho da imagem";
+"Contrast" = "Contraste";
+"Adjust image contrast" = "Ajustar contraste da imagem";
+
+/* PDF Viewer Interface */
+"Highlight" = "Destacar";
+"Hide" = "Ocultar";
+"Sign" = "Assinar";
+"Go Back" = "Voltar";
+
+/* Signature Interface */
+"Sign" = "Assinar";
+"Save" = "Salvar";
+
+/* Timestamp Interface */
+"Add Timestamp" = "Adicionar Timestamp";
+"Add date and time information to your PDF" = "Adicione informações de data e hora ao seu PDF";
+"Location" = "Localização";
+"Top Left" = "Superior Esquerda";
+"Top Right" = "Superior Direita";
+"Bottom Left" = "Inferior Esquerda";
+"Bottom Right" = "Inferior Direita";
+"Center" = "Centro";
+"Format" = "Formato";
+"Full Format" = "Formato Completo";
+"Date Only" = "Apenas Data";
+"Time Only" = "Apenas Hora";
+"Short Format" = "Formato Curto";
+"Custom Format" = "Formato Personalizado";
+"Content" = "Conteúdo";
+"Add Date" = "Adicionar Data";
+"Add Time" = "Adicionar Hora";
+"Font Size" = "Tamanho da Fonte";
+"Size" = "Tamanho";
+"Color" = "Cor";
+"Font Color" = "Cor da Fonte";
+"Background" = "Fundo";
+
+/* Share Sheet Interface */
+"Preview" = "Visualização";
+"More" = "Mais";
+"Copy" = "Copiar";
+"Mark up" = "Marcar";
+"Print" = "Imprimir";
+"Save to Files" = "Salvar em Arquivos";
+"Add Tag" = "Adicionar Tag";
+"Use as Ringtone" = "Usar como Toque";
+"Edit Actions" = "Editar Ações";
+
+/* RevenueCat */
+"Loading plans..." = "Carregando planos...";
+
+/* Premium/Paywall */
+"Open Premium" = "Abrir Premium";
+"Unlimited PDF Scanning" = "Escaneamento PDF Ilimitado";
+"Advanced OCR Technology" = "Tecnologia OCR Avançada";
+"Smart Text Recognition" = "Reconhecimento de Texto Inteligente";
+"Premium Features" = "Recursos Premium";
+"Weekly" = "Semanal";
+"Monthly" = "Mensal";
+"Yearly" = "Anual";
+"Lifetime" = "Vitalício";
+"83% SAVING" = "83% ECONOMIA";
+"BEST VALUE" = "MELHOR VALOR";
+"Open Now" = "Abrir Agora";
+"Restore" = "Restaurar";
+"Privacy Policy" = "Política de Privacidade";
+"Terms of Use" = "Termos de Uso";
+
+
+
