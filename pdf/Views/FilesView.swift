@@ -65,11 +65,10 @@ struct FilesView: View {
     
     private var backgroundGradient: some View {
         LinearGradient(
-            colors: [
-                Color(red: 0.97, green: 0.97, blue: 1.0),
-                Color(red: 0.94, green: 0.96, blue: 1.0),
-                Color.white
-            ],
+            gradient: Gradient(colors: [
+                Color.white,
+                Color(red: 0.97, green: 0.98, blue: 1.0)
+            ]),
             startPoint: .top,
             endPoint: .bottom
         )
@@ -81,7 +80,7 @@ struct FilesView: View {
             HStack {
                 Text(Date.now.formatted(date: .omitted, time: .shortened))
                     .font(.system(size: 16, weight: .semibold))
-                    .foregroundColor(.black.opacity(0.7))
+                    .foregroundColor(.black.opacity(0.8))
                 
                 Spacer()
                 
@@ -113,7 +112,7 @@ struct FilesView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .fill(Color.white)
-                        .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 4)
+                        .shadow(color: Color.black.opacity(0.08), radius: 10, x: 0, y: 6)
                 )
         }
         .buttonStyle(.plain)
@@ -140,7 +139,7 @@ struct FilesView: View {
         .background(
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .fill(Color.white)
-                .shadow(color: Color.black.opacity(0.06), radius: 8, x: 0, y: 4)
+                .shadow(color: Color.black.opacity(0.06), radius: 10, x: 0, y: 4)
         )
     }
     
@@ -160,14 +159,16 @@ struct FilesView: View {
                             .padding(.vertical, 12)
                             .background(
                                 RoundedRectangle(cornerRadius: 24, style: .continuous)
-                                    .fill(selectedCategory == category ? Color.purple : Color.white)
+                                    .fill(selectedCategory == category ? Color(red: 0.45, green: 0.13, blue: 0.96) : Color.white)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 24)
+                                            .stroke(selectedCategory == category ? Color.clear : Color.black.opacity(0.08), lineWidth: 1)
+                                    )
                                     .shadow(
-                                        color: selectedCategory == category
-                                        ? Color.purple.opacity(0.35)
-                                        : Color.black.opacity(0.04),
-                                        radius: selectedCategory == category ? 12 : 6,
+                                        color: selectedCategory == category ? Color.purple.opacity(0.35) : Color.clear,
+                                        radius: selectedCategory == category ? 12 : 0,
                                         x: 0,
-                                        y: selectedCategory == category ? 10 : 3
+                                        y: selectedCategory == category ? 10 : 0
                                     )
                             )
                     }
@@ -195,15 +196,9 @@ struct FilesView: View {
                 .font(.system(size: 28, weight: .bold))
                 .foregroundColor(.white)
                 .frame(width: 64, height: 64)
-                .background(
-                    LinearGradient(
-                        colors: [Color.purple, Color.blue],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
+                .background(Color(red: 0.45, green: 0.13, blue: 0.96))
                 .clipShape(Circle())
-                .shadow(color: Color.purple.opacity(0.35), radius: 16, x: 0, y: 12)
+                .shadow(color: Color.purple.opacity(0.4), radius: 18, x: 0, y: 12)
         }
         .buttonStyle(.plain)
         .padding(.trailing, 24)
@@ -213,13 +208,13 @@ struct FilesView: View {
     // MARK: - Sample Data
     private var sampleFiles: [FileItem] {
         [
-            FileItem(name: "FormFill", type: .pdf, size: "131.0 KB", date: Date(), isFavorite: true, isRecent: true),
-            FileItem(name: "Invoice-2025", type: .pdf, size: "1.1 MB", date: Date().addingTimeInterval(-3600), isFavorite: false, isRecent: true),
-            FileItem(name: "BrandAssets", type: .image, size: "8.4 MB", date: Date().addingTimeInterval(-7200), isFavorite: false, isRecent: false),
-            FileItem(name: "Quarterly_Report", type: .xls, size: "2.5 MB", date: Date().addingTimeInterval(-5400), isFavorite: false, isRecent: true),
-            FileItem(name: "MeetingNotes", type: .text, size: "24 KB", date: Date().addingTimeInterval(-9600), isFavorite: true, isRecent: false),
-            FileItem(name: "PitchDeck", type: .ppt, size: "6.1 MB", date: Date().addingTimeInterval(-86000), isFavorite: false, isRecent: false),
-            FileItem(name: "AudioDraft", type: .audio, size: "3.2 MB", date: Date().addingTimeInterval(-176000), isFavorite: false, isRecent: false)
+            FileItem(name: "FormFill", type: .pdf, size: "131.0 KB", date: Date(), isFavorite: true, isRecent: true, preview: "formfill_preview"),
+            FileItem(name: "file", type: .pdf, size: "1.1 MB", date: Date().addingTimeInterval(-3600), isFavorite: false, isRecent: true, preview: "blackdoc_preview"),
+            FileItem(name: "BrandAssets", type: .image, size: "8.4 MB", date: Date().addingTimeInterval(-7200), isFavorite: false, isRecent: false, preview: nil),
+            FileItem(name: "Quarterly_Report", type: .xls, size: "2.5 MB", date: Date().addingTimeInterval(-5400), isFavorite: false, isRecent: true, preview: nil),
+            FileItem(name: "MeetingNotes", type: .text, size: "24 KB", date: Date().addingTimeInterval(-9600), isFavorite: true, isRecent: false, preview: nil),
+            FileItem(name: "PitchDeck", type: .ppt, size: "6.1 MB", date: Date().addingTimeInterval(-86000), isFavorite: false, isRecent: false, preview: nil),
+            FileItem(name: "AudioDraft", type: .audio, size: "3.2 MB", date: Date().addingTimeInterval(-176000), isFavorite: false, isRecent: false, preview: nil)
         ]
     }
 }
@@ -274,6 +269,7 @@ struct FileItem: Identifiable {
     let date: Date
     let isFavorite: Bool
     let isRecent: Bool
+    let preview: String?
 }
 
 enum FileType: String, CaseIterable {
@@ -321,19 +317,22 @@ struct FileRowCard: View {
     var body: some View {
         HStack(spacing: 16) {
             ZStack(alignment: .bottomTrailing) {
-                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                RoundedRectangle(cornerRadius: 24, style: .continuous)
                     .fill(Color.white)
-                    .frame(width: 70, height: 88)
-                    .shadow(color: Color.black.opacity(0.08), radius: 10, x: 0, y: 8)
+                    .frame(width: 76, height: 104)
+                    .shadow(color: Color.black.opacity(0.08), radius: 12, x: 0, y: 8)
                 
-                VStack(spacing: 10) {
-                    Spacer()
+                if let preview = file.preview, let image = UIImage(named: preview) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 68, height: 96)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                } else {
                     Image(systemName: file.type.icon)
-                        .font(.system(size: 28, weight: .semibold))
+                        .font(.system(size: 30, weight: .semibold))
                         .foregroundColor(file.type.accentColor)
-                    Spacer()
                 }
-                .frame(width: 70, height: 88)
                 
                 Text(file.type.rawValue.uppercased())
                     .font(.system(size: 10, weight: .semibold))
@@ -341,13 +340,13 @@ struct FileRowCard: View {
                     .padding(.horizontal, 6)
                     .padding(.vertical, 4)
                     .background(file.type.accentColor)
-                    .clipShape(Capsule())
-                    .offset(x: -8, y: -8)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .offset(x: -6, y: -6)
             }
             
             VStack(alignment: .leading, spacing: 6) {
                 Text(file.name)
-                    .font(.system(size: 17, weight: .semibold))
+                    .font(.system(size: 18, weight: .semibold))
                     .foregroundColor(.black)
                     .lineLimit(1)
                 
@@ -363,83 +362,73 @@ struct FileRowCard: View {
                     .font(.system(size: 18, weight: .semibold))
                     .rotationEffect(.degrees(90))
                     .foregroundColor(.black.opacity(0.7))
-                    .frame(width: 40, height: 40)
+                    .frame(width: 32, height: 32)
+                    .background(Color.white)
+                    .clipShape(Circle())
+                    .shadow(color: Color.black.opacity(0.08), radius: 6, x: 0, y: 3)
                     .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
         }
-        .padding(.horizontal, 18)
+        .padding(.horizontal, 20)
         .padding(.vertical, 18)
         .background(
             RoundedRectangle(cornerRadius: 32, style: .continuous)
                 .fill(Color.white)
-                .shadow(color: Color.black.opacity(0.06), radius: 16, x: 0, y: 8)
+                .shadow(color: Color.purple.opacity(0.08), radius: 20, x: 0, y: 12)
         )
     }
 }
 
 // MARK: - Creation Sheet
 struct FileCreationSheet: View {
-    private struct CreationItem: Identifiable {
-        enum Kind {
-            case createNew, importFrom
-        }
-        
-        let id = UUID()
-        let title: String
-        let subtitle: String
-        let icon: String
-        let tint: Color
-        let kind: Kind
-    }
-    
     private let createItems: [CreationItem] = [
-        CreationItem(title: "PDF", subtitle: "Create PDF".localized, icon: "doc.richtext", tint: .red.opacity(0.85), kind: .createNew),
-        CreationItem(title: "Folder", subtitle: "New Folder".localized, icon: "folder.fill.badge.plus", tint: .blue.opacity(0.85), kind: .createNew),
-        CreationItem(title: "Text File", subtitle: "Write Notes".localized, icon: "square.and.pencil", tint: .green.opacity(0.8), kind: .createNew),
-        CreationItem(title: "Scan", subtitle: "Scan Document".localized, icon: "doc.viewfinder", tint: .mint.opacity(0.8), kind: .createNew)
+        CreationItem(title: "PDF", icon: "doc.richtext", tint: Color(red: 0.98, green: 0.38, blue: 0.38)),
+        CreationItem(title: "Folder", icon: "folder.fill.badge.plus", tint: Color(red: 0.40, green: 0.64, blue: 0.99)),
+        CreationItem(title: "Text File", icon: "square.and.pencil", tint: Color(red: 0.53, green: 0.79, blue: 0.53)),
+        CreationItem(title: "Scan", icon: "doc.viewfinder", tint: Color(red: 0.39, green: 0.78, blue: 0.60))
     ]
     
     private let importItems: [CreationItem] = [
-        CreationItem(title: "Files", subtitle: "Import Files".localized, icon: "folder", tint: .blue, kind: .importFrom),
-        CreationItem(title: "Photos", subtitle: "Import Photos".localized, icon: "photo", tint: .pink, kind: .importFrom),
-        CreationItem(title: "Cloud", subtitle: "Import from Cloud".localized, icon: "icloud.and.arrow.down", tint: .cyan, kind: .importFrom)
+        CreationItem(title: "Files", icon: "folder", tint: Color(red: 0.27, green: 0.52, blue: 0.96)),
+        CreationItem(title: "Photos", icon: "photo", tint: Color(red: 0.96, green: 0.54, blue: 0.66)),
+        CreationItem(title: "Cloud", icon: "icloud.and.arrow.down", tint: Color(red: 0.48, green: 0.72, blue: 0.99))
     ]
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 24) {
+        VStack(alignment: .leading, spacing: 28) {
             RoundedRectangle(cornerRadius: 3)
-                .fill(Color.gray.opacity(0.3))
+                .fill(Color.gray.opacity(0.4))
                 .frame(width: 40, height: 5)
                 .padding(.top, 8)
                 .frame(maxWidth: .infinity)
             
-            section(title: "Create New".localized, items: createItems)
+            section(title: "Create New".localized, gridItems: createItems, columns: 4)
             
-            section(title: "Import From".localized, items: importItems)
+            section(title: "Import From".localized, gridItems: importItems, columns: 3)
             
             Spacer()
         }
-        .padding(.horizontal, 24)
-        .padding(.bottom, 24)
+        .padding(.horizontal, 20)
+        .padding(.bottom, 32)
         .background(
-            RoundedRectangle(cornerRadius: 32, style: .continuous)
+            RoundedRectangle(cornerRadius: 36, style: .continuous)
                 .fill(Color.white)
         )
     }
     
-    private func section(title: String, items: [CreationItem]) -> some View {
-        VStack(alignment: .leading, spacing: 16) {
+    private func section(title: String, gridItems: [CreationItem], columns: Int) -> some View {
+        VStack(alignment: .leading, spacing: 18) {
             Text(title)
                 .font(.system(size: 20, weight: .semibold))
                 .foregroundColor(.black)
             
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 16), count: 3), spacing: 16) {
-                ForEach(items) { item in
-                    VStack(spacing: 12) {
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 16), count: columns), spacing: 16) {
+                ForEach(gridItems) { item in
+                    VStack(spacing: 10) {
                         ZStack {
-                            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                                .fill(item.tint.opacity(0.15))
+                            RoundedRectangle(cornerRadius: 24, style: .continuous)
+                                .fill(item.tint.opacity(0.18))
                                 .frame(width: 72, height: 72)
                             
                             Image(systemName: item.icon)
@@ -452,15 +441,16 @@ struct FileCreationSheet: View {
                             .foregroundColor(.black)
                     }
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 24, style: .continuous)
-                            .fill(Color.white)
-                            .shadow(color: Color.black.opacity(0.05), radius: 10, x: 0, y: 4)
-                    )
                 }
             }
         }
+    }
+    
+    private struct CreationItem: Identifiable {
+        let id = UUID()
+        let title: String
+        let icon: String
+        let tint: Color
     }
 }
 
