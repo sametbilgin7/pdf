@@ -59,7 +59,7 @@ struct FilesView: View {
         }
         .sheet(isPresented: $showingCreationSheet) {
             FileCreationSheet()
-                .presentationDetents([.height(360), .medium])
+                .presentationDetents([.height(360)])
                 .presentationDragIndicator(.visible)
         }
     }
@@ -400,7 +400,7 @@ struct FileCreationSheet: View {
             RoundedRectangle(cornerRadius: 3)
                 .fill(Color.gray.opacity(0.4))
                 .frame(width: 40, height: 5)
-                .padding(.top, 8)
+                .padding(.top, 12)
                 .frame(maxWidth: .infinity)
             
             section(title: "Create New".localized, items: createItems)
@@ -410,7 +410,8 @@ struct FileCreationSheet: View {
             Spacer()
         }
         .padding(.horizontal, 24)
-        .padding(.bottom, 32)
+        .padding(.top, 8)
+        .padding(.bottom, 36)
         .background(
             RoundedRectangle(cornerRadius: 40, style: .continuous)
                 .fill(Color.white)
@@ -428,10 +429,10 @@ struct FileCreationSheet: View {
                     VStack(spacing: 12) {
                         RoundedRectangle(cornerRadius: 24, style: .continuous)
                             .fill(item.background)
-                            .frame(width: 70, height: 70)
+                            .frame(width: 72, height: 72)
                             .overlay(
                                 Image(systemName: item.icon)
-                                    .font(.system(size: 28, weight: .semibold))
+                                    .font(.system(size: 30, weight: .semibold))
                                     .foregroundColor(item.tint)
                             )
                         
@@ -439,7 +440,7 @@ struct FileCreationSheet: View {
                             .font(.system(size: 14, weight: .medium))
                             .foregroundColor(.black)
                     }
-                    .frame(maxWidth: .infinity)
+                    .frame(width: 72)
                 }
             }
         }
