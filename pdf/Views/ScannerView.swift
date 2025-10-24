@@ -182,19 +182,10 @@ struct ScannerView: View {
                             Label("Photos".localized, systemImage: "photo.fill")
                         }
                     } label: {
-                        ZStack {
-                            Circle()
-                                .fill(Color.purple)
-                                .frame(width: 56, height: 56)
-                                .shadow(color: Color.black.opacity(0.2), radius: 4, x: 0, y: 2)
-                            
-                            Image(systemName: "plus")
-                                .font(.system(size: 24, weight: .medium))
-                                .foregroundColor(.white)
-                        }
+                        FloatingPlusButtonLabel()
                     }
-                    .padding(.trailing, 20)
-                    .padding(.bottom, 20)
+                    .padding(.trailing, 24)
+                    .padding(.bottom, 32)
                 }
             }
         }
