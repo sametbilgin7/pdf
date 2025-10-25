@@ -16,7 +16,7 @@ struct FilesView: View {
     @State private var sortAscending = true
     @State private var isSelectionMode = false
     @State private var selectedFileIDs: Set<UUID> = []
-    @State private var files: [FileItem] = FileItem.sampleData
+    @State private var files: [FileItem] = []
     
     private var filteredFiles: [FileItem] {
         files.filter { file in
@@ -199,35 +199,54 @@ struct FilesView: View {
     private let gridColumns: [GridItem] = Array(repeating: GridItem(.flexible(), spacing: 16), count: 3)
     
     private var filesList: some View {
-        ScrollView {
-            if isListView {
-                LazyVStack(spacing: 16) {
-                    ForEach(filteredFiles) { file in
-                        FileRowCard(
-                            file: file,
-                            isSelectionMode: isSelectionMode,
-                            isSelected: selectedFileIDs.contains(file.id),
-                            onTap: { handleFileTap(file) },
-                            onOptionsTap: { /* TODO: file-specific actions */ }
-                        )
-                    }
+        Group {
+            if filteredFiles.isEmpty {
+                VStack(spacing: 16) {
+                    Image(systemName: "tray")
+                        .font(.system(size: 48))
+                        .foregroundColor(.gray.opacity(0.5))
+                    Text("No files yet".localized)
+                        .font(.headline)
+                        .foregroundColor(.black)
+                    Text("Add or import documents to see them here.".localized)
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 40)
                 }
-                .padding(.horizontal, 20)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
-                LazyVGrid(columns: gridColumns, spacing: 20) {
-                    ForEach(filteredFiles) { file in
-                        FileGridCard(
-                            file: file,
-                            isSelectionMode: isSelectionMode,
-                            isSelected: selectedFileIDs.contains(file.id),
-                            onTap: { handleFileTap(file) }
-                        )
+                ScrollView {
+                    if isListView {
+                        LazyVStack(spacing: 16) {
+                            ForEach(filteredFiles) { file in
+                                FileRowCard(
+                                    file: file,
+                                    isSelectionMode: isSelectionMode,
+                                    isSelected: selectedFileIDs.contains(file.id),
+                                    onTap: { handleFileTap(file) },
+                                    onOptionsTap: { /* TODO: file-specific actions */ }
+                                )
+                            }
+                        }
+                        .padding(.horizontal, 20)
+                    } else {
+                        LazyVGrid(columns: gridColumns, spacing: 20) {
+                            ForEach(filteredFiles) { file in
+                                FileGridCard(
+                                    file: file,
+                                    isSelectionMode: isSelectionMode,
+                                    isSelected: selectedFileIDs.contains(file.id),
+                                    onTap: { handleFileTap(file) }
+                                )
+                            }
+                        }
+                        .padding(.horizontal, 20)
                     }
                 }
-                .padding(.horizontal, 20)
+                .padding(.bottom, 40)
             }
         }
-        .padding(.bottom, 40)
     }
     
     private var floatingButton: some View {
@@ -332,18 +351,6 @@ struct FileItem: Identifiable {
     let isFavorite: Bool
     let isRecent: Bool
     let preview: String?
-}
-
-extension FileItem {
-    static let sampleData: [FileItem] = [
-        FileItem(name: "FormFill", type: .pdf, size: "131.0 KB", date: Date(), isFavorite: true, isRecent: true, preview: "formfill_preview"),
-        FileItem(name: "file", type: .pdf, size: "1.1 MB", date: Date().addingTimeInterval(-3600), isFavorite: false, isRecent: true, preview: "blackdoc_preview"),
-        FileItem(name: "BrandAssets", type: .image, size: "8.4 MB", date: Date().addingTimeInterval(-7200), isFavorite: false, isRecent: false, preview: nil),
-        FileItem(name: "Quarterly_Report", type: .xls, size: "2.5 MB", date: Date().addingTimeInterval(-5400), isFavorite: false, isRecent: true, preview: nil),
-        FileItem(name: "MeetingNotes", type: .text, size: "24 KB", date: Date().addingTimeInterval(-9600), isFavorite: true, isRecent: false, preview: nil),
-        FileItem(name: "PitchDeck", type: .ppt, size: "6.1 MB", date: Date().addingTimeInterval(-86000), isFavorite: false, isRecent: false, preview: nil),
-        FileItem(name: "AudioDraft", type: .audio, size: "3.2 MB", date: Date().addingTimeInterval(-176000), isFavorite: false, isRecent: false, preview: nil)
-    ]
 }
 
 enum FileType: String, CaseIterable {
@@ -614,11 +621,11 @@ struct FileCreationSheet: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 28) {
+        VStack(alignment: .leading, spacing: 22) {
             RoundedRectangle(cornerRadius: 3)
                 .fill(Color.gray.opacity(0.4))
                 .frame(width: 44, height: 5)
-                .padding(.vertical, 12)
+                .padding(.top, 12)
                 .frame(maxWidth: .infinity)
             
             section(title: "Create New".localized, items: createItems)

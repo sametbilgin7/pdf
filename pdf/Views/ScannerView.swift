@@ -12,18 +12,21 @@ import UIKit
 struct ScannerView: View {
     @Binding var selectedTab: TabSelection
     @ObservedObject var libraryService: PDFLibraryService
+    private let pdfGenerator = PDFGeneratorService()
     @State private var showingScanner = false
     @State private var showingCreateModal = false
     @State private var selectedCollection: ScannedCollection?
-    @State private var showingCollectionOptions = false
     @State private var showingImportModal = false
     @State private var showingImagePicker = false
     @State private var isGridView = true
-    @State private var showingDocumentEditor = false
-    @State private var activeCollectionIndex: Int?
-    @State private var activePageIndex: Int = 0
+    @State private var activeEditor: EditorContext?
     @State private var pendingScanImages: [UIImage] = []
     @State private var importedImages: [UIImage] = []
+    @State private var showingRenameAlert = false
+    @State private var renameText: String = ""
+    @State private var sharePayload: SharePayload?
+    @State private var actionInfo: ActionInfo?
+    @State private var isPerformingAction = false
     
     var body: some View {
         ZStack {
@@ -134,9 +137,8 @@ struct ScannerView: View {
                                     onTap: {
                                         openEditor(for: collection)
                                     },
-                                    onOptionsTap: {
-                                        selectedCollection = collection
-                                        showingCollectionOptions = true
+                                    onMenuAction: { action in
+                                        handleMenuAction(action, for: collection)
                                     }
                                 )
                             }
@@ -150,9 +152,8 @@ struct ScannerView: View {
                                     onTap: {
                                         openEditor(for: collection)
                                     },
-                                    onOptionsTap: {
-                                        selectedCollection = collection
-                                        showingCollectionOptions = true
+                                    onMenuAction: { action in
+                                        handleMenuAction(action, for: collection)
                                     }
                                 )
                             }
@@ -188,30 +189,47 @@ struct ScannerView: View {
                     .padding(.bottom, 32)
                 }
             }
+            
+            if isPerformingAction {
+                Color.black.opacity(0.2)
+                    .ignoresSafeArea()
+                ProgressView("Processing...".localized)
+                    .padding(.horizontal, 32)
+                    .padding(.vertical, 24)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.white)
+                            .shadow(color: .black.opacity(0.15), radius: 20, x: 0, y: 8)
+                    )
+            }
         }
         .fullScreenCover(isPresented: $showingScanner) {
             DocumentScannerView(scannedImages: $pendingScanImages) {
                 showingScanner = false
             }
         }
-        .fullScreenCover(isPresented: $showingDocumentEditor) {
-            if let index = activeCollectionIndex,
-               libraryService.scannedCollections.indices.contains(index) {
+        .fullScreenCover(item: $activeEditor) { editor in
+            if let index = libraryService.scannedCollections.firstIndex(where: { $0.id == editor.id }) {
+                let binding = Binding<[UIImage]>(
+                    get: { libraryService.scannedCollections[index].images },
+                    set: { newValue in
+                        libraryService.scannedCollections[index].images = newValue
+                    }
+                )
                 DocumentEditorView(
-                    images: Binding(
-                        get: { libraryService.scannedCollections[index].images },
-                        set: { libraryService.scannedCollections[index].images = $0 }
-                    ),
-                    initialIndex: activePageIndex,
-                    title: libraryService.scannedCollections[index].name
+                    images: binding,
+                    initialIndex: editor.pageIndex,
+                    title: "Editor".localized
                 )
                 .onDisappear {
-                    if libraryService.scannedCollections.indices.contains(index),
-                       libraryService.scannedCollections[index].images.isEmpty {
-                        libraryService.removeScannedCollection(at: index)
+                    if let refreshedIndex = libraryService.scannedCollections.firstIndex(where: { $0.id == editor.id }) {
+                        if libraryService.scannedCollections[refreshedIndex].images.isEmpty {
+                            libraryService.removeScannedCollection(at: refreshedIndex)
+                        } else {
+                            libraryService.saveScannedCollections()
+                        }
                     }
-                    activeCollectionIndex = nil
-                    activePageIndex = 0
+                    activeEditor = nil
                 }
             }
         }
@@ -243,16 +261,42 @@ struct ScannerView: View {
             addCollection(with: newValue, source: .photoLibrary)
             importedImages.removeAll()
         }
+        .sheet(item: $sharePayload) { payload in
+            ModernShareSheet(activityItems: [payload.url]) {
+                sharePayload = nil
+            }
+        }
+        .alert("Rename".localized, isPresented: $showingRenameAlert) {
+            TextField("Collection Name".localized, text: $renameText)
+            Button("Cancel".localized, role: .cancel) {
+                renameText = ""
+                selectedCollection = nil
+            }
+            Button("Save".localized) {
+                renameSelectedCollection()
+            }
+        } message: {
+            Text("Enter a new name for this collection".localized)
+        }
+        .alert(item: $actionInfo) { info in
+            Alert(
+                title: Text(info.title),
+                message: Text(info.message),
+                dismissButton: .default(Text("OK".localized)) {
+                    actionInfo = nil
+                }
+            )
+        }
     }
     
     private func openEditor(for collection: ScannedCollection, pageIndex: Int = 0) {
         guard let index = libraryService.scannedCollections.firstIndex(where: { $0.id == collection.id }) else { return }
+        libraryService.scannedCollections[index].ensureImagesLoaded()
         let pages = libraryService.scannedCollections[index].images
         guard !pages.isEmpty else { return }
         
-        activeCollectionIndex = index
-        activePageIndex = max(0, min(pageIndex, pages.count - 1))
-        showingDocumentEditor = true
+        let targetIndex = max(0, min(pageIndex, pages.count - 1))
+        activeEditor = EditorContext(id: collection.id, pageIndex: targetIndex)
     }
     
     
@@ -273,6 +317,9 @@ struct ScannerView: View {
         )
         
         libraryService.addScannedCollection(newCollection)
+        Task {
+            await persistCollectionAsPDF(images: validImages, name: newCollection.name)
+        }
         openEditor(for: newCollection)
     }
     
@@ -299,9 +346,98 @@ struct ScannerView: View {
         return formatter.string(fromByteCount: Int64(totalBytes))
     }
     
-    private enum CollectionSource {
+    enum CollectionSource {
         case scan
         case photoLibrary
+    }
+    
+    private func persistCollectionAsPDF(images: [UIImage], name: String) async {
+        do {
+            _ = try await pdfGenerator.generatePDF(from: images, fileName: name)
+            await MainActor.run {
+                libraryService.loadPDFFiles()
+            }
+        } catch {
+            print("❌ Failed to persist scanned collection as PDF: \(error.localizedDescription)")
+        }
+    }
+    
+    private func handleMenuAction(_ action: CollectionMenuAction, for collection: ScannedCollection) {
+        selectedCollection = collection
+        switch action {
+        case .convert:
+            convertCollectionToPDF(collection)
+        case .rename:
+            renameText = collection.name
+            showingRenameAlert = true
+        case .group:
+            presentGroupInfo()
+        case .share:
+            convertCollectionToPDF(collection, shouldShare: true)
+        case .delete:
+            deleteCollection(collection)
+        }
+    }
+    
+    private func convertCollectionToPDF(_ collection: ScannedCollection, shouldShare: Bool = false) {
+        collection.ensureImagesLoaded()
+        guard !collection.images.isEmpty else {
+            actionInfo = ActionInfo(
+                title: "No Pages".localized,
+                message: "This collection does not contain any images.".localized
+            )
+            return
+        }
+        guard !isPerformingAction else { return }
+        isPerformingAction = true
+        Task {
+            do {
+                let url = try await pdfGenerator.generatePDF(from: collection.images, fileName: collection.name)
+                await MainActor.run {
+                    libraryService.loadPDFFiles()
+                    if shouldShare {
+                        sharePayload = SharePayload(url: url)
+                    } else {
+                        actionInfo = ActionInfo(
+                            title: "Success".localized,
+                            message: "PDF saved to your library".localized
+                        )
+                    }
+                    isPerformingAction = false
+                }
+            } catch {
+                await MainActor.run {
+                    isPerformingAction = false
+                    actionInfo = ActionInfo(
+                        title: "Error".localized,
+                        message: error.localizedDescription
+                    )
+                }
+            }
+        }
+    }
+    
+    private func renameSelectedCollection() {
+        guard let collection = selectedCollection else { return }
+        let trimmedName = renameText.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedName.isEmpty else { return }
+        libraryService.renameScannedCollection(collection, newName: trimmedName)
+        selectedCollection?.name = trimmedName
+        renameText = ""
+        selectedCollection = nil
+        showingRenameAlert = false
+    }
+    
+    private func deleteCollection(_ collection: ScannedCollection) {
+        guard let index = libraryService.scannedCollections.firstIndex(where: { $0.id == collection.id }) else { return }
+        libraryService.removeScannedCollection(at: index)
+    }
+    
+    private func presentGroupInfo() {
+        actionInfo = ActionInfo(
+            title: "Coming Soon".localized,
+            message: "Grouping scanned collections will be available in a future update.".localized
+        )
     }
 }
 
@@ -310,7 +446,7 @@ struct ScannerView: View {
 struct ScannedCollectionCard: View {
     let collection: ScannedCollection
     let onTap: () -> Void
-    let onOptionsTap: () -> Void
+    let onMenuAction: (CollectionMenuAction) -> Void
     
     var body: some View {
         VStack(spacing: 4) {
@@ -339,21 +475,30 @@ struct ScannedCollectionCard: View {
                     HStack(spacing: 0) {
                         Spacer()
                         Menu {
-                            Button("Convert To PDF".localized) {
-                                // Convert to PDF
+                            Button {
+                                onMenuAction(.convert)
+                            } label: {
+                                Label("Convert To PDF".localized, systemImage: "doc.text")
                             }
-                            Button("Rename".localized) {
-                                // Rename collection
+                            Button {
+                                onMenuAction(.rename)
+                            } label: {
+                                Label("Rename".localized, systemImage: "pencil")
                             }
-                            Button("Group".localized) {
-                                // Group collection
+                            Button {
+                                onMenuAction(.group)
+                            } label: {
+                                Label("Group".localized, systemImage: "rectangle.stack")
                             }
-                            Button("Share".localized) {
-                                // Share collection
+                            Button {
+                                onMenuAction(.share)
+                            } label: {
+                                Label("Share".localized, systemImage: "square.and.arrow.up")
                             }
-                            Button("Delete".localized, role: .destructive) {
-                                // Delete collection
-                                onOptionsTap()
+                            Button(role: .destructive) {
+                                onMenuAction(.delete)
+                            } label: {
+                                Label("Delete".localized, systemImage: "trash")
                             }
                         } label: {
                             Text("⋮")
@@ -388,7 +533,7 @@ struct ScannedCollectionCard: View {
 struct ScannedCollectionListCard: View {
     let collection: ScannedCollection
     let onTap: () -> Void
-    let onOptionsTap: () -> Void
+    let onMenuAction: (CollectionMenuAction) -> Void
     
     var body: some View {
         HStack(spacing: 16) {
@@ -432,21 +577,30 @@ struct ScannedCollectionListCard: View {
             
             // Options button
             Menu {
-                Button("Convert To PDF".localized) {
-                    // Convert to PDF
+                Button {
+                    onMenuAction(.convert)
+                } label: {
+                    Label("Convert To PDF".localized, systemImage: "doc.text")
                 }
-                Button("Rename".localized) {
-                    // Rename collection
+                Button {
+                    onMenuAction(.rename)
+                } label: {
+                    Label("Rename".localized, systemImage: "pencil")
                 }
-                Button("Group".localized) {
-                    // Group collection
+                Button {
+                    onMenuAction(.group)
+                } label: {
+                    Label("Group".localized, systemImage: "rectangle.stack")
                 }
-                Button("Share".localized) {
-                    // Share collection
+                Button {
+                    onMenuAction(.share)
+                } label: {
+                    Label("Share".localized, systemImage: "square.and.arrow.up")
                 }
-                Button("Delete".localized, role: .destructive) {
-                    // Delete collection
-                    onOptionsTap()
+                Button(role: .destructive) {
+                    onMenuAction(.delete)
+                } label: {
+                    Label("Delete".localized, systemImage: "trash")
                 }
             } label: {
                 Text("⋮")
@@ -681,6 +835,30 @@ struct ImportOptionButton: View {
         }
         .buttonStyle(PlainButtonStyle())
     }
+}
+
+enum CollectionMenuAction {
+    case convert
+    case rename
+    case group
+    case share
+    case delete
+}
+
+struct ActionInfo: Identifiable {
+    let id = UUID()
+    let title: String
+    let message: String
+}
+
+struct SharePayload: Identifiable {
+    let id = UUID()
+    let url: URL
+}
+
+private struct EditorContext: Identifiable, Equatable {
+    let id: UUID
+    let pageIndex: Int
 }
 
 #Preview {

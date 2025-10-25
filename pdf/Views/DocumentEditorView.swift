@@ -141,16 +141,16 @@ struct DocumentEditorView: View {
         Group {
             if let image = currentImage {
                 GeometryReader { geometry in
-                    let maxHeight = min(geometry.size.height, geometry.size.width * 1.4)
+                    let availableWidth = geometry.size.width
+                    let availableHeight = geometry.size.height
                     
                     Image(uiImage: image)
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
+                        .scaledToFit()
                         .frame(
-                            width: geometry.size.width,
-                            height: maxHeight
+                            maxWidth: availableWidth,
+                            maxHeight: availableHeight
                         )
-                        .clipped()
                         .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
                         .shadow(color: Color.black.opacity(0.12), radius: 24, x: 0, y: 16)
                         .gesture(
@@ -158,14 +158,12 @@ struct DocumentEditorView: View {
                                 .onEnded { value in
                                     let threshold: CGFloat = 50
                                     if value.translation.width > threshold {
-                                        // Swipe right - previous page
                                         if currentIndex > 0 {
                                             withAnimation(.easeInOut(duration: 0.3)) {
                                                 currentIndex -= 1
                                             }
                                         }
                                     } else if value.translation.width < -threshold {
-                                        // Swipe left - next page
                                         if currentIndex < images.count - 1 {
                                             withAnimation(.easeInOut(duration: 0.3)) {
                                                 currentIndex += 1
@@ -201,36 +199,45 @@ struct DocumentEditorView: View {
     }
     
     private var bottomToolbar: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 14) {
             Capsule()
-                .fill(Color.black.opacity(0.08))
-                .frame(width: 40, height: 4)
+                .fill(Color.black.opacity(0.12))
+                .frame(width: 48, height: 4)
             
-            HStack(spacing: 0) {
-                ForEach(editorActions) { action in
-                    Button(action: action.perform) {
-                        VStack(spacing: 8) {
-                            Image(systemName: action.icon)
-                                .font(.system(size: 20, weight: .medium))
-                                .foregroundColor(.black)
-                            
-                            Text(action.title)
-                                .font(.system(size: 13, weight: .semibold))
-                                .foregroundColor(.black)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(editorActions) { action in
+                        Button(action: action.perform) {
+                            VStack(spacing: 10) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                                        .fill(action.color.opacity(0.15))
+                                        .frame(width: 60, height: 60)
+                                    
+                                    Image(systemName: action.icon)
+                                        .font(.system(size: 20, weight: .semibold))
+                                        .foregroundColor(action.color)
+                                }
+                                
+                                Text(action.title)
+                                    .font(.system(size: 13, weight: .semibold))
+                                    .foregroundColor(.black)
+                                    .multilineTextAlignment(.center)
+                            }
+                            .frame(width: 72)
                         }
-                        .frame(maxWidth: .infinity)
+                        .buttonStyle(PlainButtonStyle())
                     }
-                    .buttonStyle(PlainButtonStyle())
                 }
+                .padding(.horizontal, 8)
             }
         }
-        .padding(.horizontal, 24)
-        .padding(.top, 20)
-        .padding(.bottom, 28)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 16)
         .background(
             RoundedRectangle(cornerRadius: 32, style: .continuous)
                 .fill(Color.white)
-                .shadow(color: Color.black.opacity(0.08), radius: 20, x: 0, y: -4)
+                .shadow(color: Color.black.opacity(0.12), radius: 20, x: 0, y: -4)
         )
         .padding(.horizontal, 24)
         .padding(.bottom, 12)
@@ -247,6 +254,7 @@ struct DocumentEditorView: View {
                 id: "edit",
                 title: "Edit".localized,
                 icon: "pencil",
+                color: .blue,
                 perform: {
                     guard currentImage != nil else { return }
                     showingImageEditor = true
@@ -256,18 +264,21 @@ struct DocumentEditorView: View {
                 id: "annotation",
                 title: "Annotation".localized,
                 icon: "highlighter",
+                color: .orange,
                 perform: { infoMessage = "Annotation tools will be available soon.".localized }
             ),
             DocumentEditorAction(
                 id: "smudge",
                 title: "Smudge".localized,
                 icon: "hand.draw",
+                color: .pink,
                 perform: { infoMessage = "Smudge tool will be available soon.".localized }
             ),
             DocumentEditorAction(
                 id: "ocr",
                 title: "OCR".localized,
                 icon: "text.viewfinder",
+                color: .purple,
                 perform: {
                     guard currentImage != nil else { return }
                     showingOCR = true
@@ -277,6 +288,7 @@ struct DocumentEditorView: View {
                 id: "signature",
                 title: "Signature".localized,
                 icon: "signature",
+                color: .green,
                 perform: { infoMessage = "Signature tool will be available soon.".localized }
             )
         ]
@@ -315,6 +327,7 @@ private struct DocumentEditorAction: Identifiable {
     let id: String
     let title: String
     let icon: String
+    let color: Color
     let perform: () -> Void
 }
 

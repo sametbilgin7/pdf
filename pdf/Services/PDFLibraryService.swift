@@ -13,11 +13,20 @@ import Combine
 // MARK: - Scanned Collection Model
 class ScannedCollection: NSObject, Identifiable, Codable, NSCoding {
     let id: UUID
-    let name: String
+    var name: String
     let size: String
     let thumbnail: String
     let dateCreated: Date
-    var images: [UIImage]
+    var images: [UIImage] {
+        didSet {
+            imageDataBlobs = ScannedCollection.compress(images)
+        }
+    }
+    private var imageDataBlobs: [Data]
+    
+    private static func compress(_ images: [UIImage]) -> [Data] {
+        images.compactMap { $0.jpegData(compressionQuality: 0.85) }
+    }
     
     init(id: UUID = UUID(), name: String, size: String, thumbnail: String, dateCreated: Date, images: [UIImage]) {
         self.id = id
@@ -26,6 +35,7 @@ class ScannedCollection: NSObject, Identifiable, Codable, NSCoding {
         self.thumbnail = thumbnail
         self.dateCreated = dateCreated
         self.images = images
+        self.imageDataBlobs = ScannedCollection.compress(images)
         super.init()
     }
     
@@ -42,11 +52,10 @@ class ScannedCollection: NSObject, Identifiable, Codable, NSCoding {
         thumbnail = try container.decode(String.self, forKey: .thumbnail)
         dateCreated = try container.decode(Date.self, forKey: .dateCreated)
         
-        if let imageDataArray = try container.decodeIfPresent([Data].self, forKey: .imageData) {
-            images = imageDataArray.compactMap { UIImage(data: $0) }
-        } else {
-            images = []
-        }
+        let imageDataArray = try container.decodeIfPresent([Data].self, forKey: .imageData) ?? []
+        imageDataBlobs = imageDataArray
+        images = imageDataArray.compactMap { UIImage(data: $0) }
+        super.init()
     }
     
     func encode(to encoder: Encoder) throws {
@@ -57,8 +66,7 @@ class ScannedCollection: NSObject, Identifiable, Codable, NSCoding {
         try container.encode(thumbnail, forKey: .thumbnail)
         try container.encode(dateCreated, forKey: .dateCreated)
         
-        let imageDataArray = images.compactMap { $0.jpegData(compressionQuality: 0.8) }
-        try container.encode(imageDataArray, forKey: .imageData)
+        try container.encode(imageDataBlobs, forKey: .imageData)
     }
     
     // MARK: - NSCoding
@@ -69,8 +77,7 @@ class ScannedCollection: NSObject, Identifiable, Codable, NSCoding {
         coder.encode(thumbnail, forKey: "thumbnail")
         coder.encode(dateCreated, forKey: "dateCreated")
         
-        let imageDataArray = images.compactMap { $0.jpegData(compressionQuality: 0.8) }
-        coder.encode(imageDataArray, forKey: "imageData")
+        coder.encode(imageDataBlobs, forKey: "imageData")
     }
     
     required init?(coder: NSCoder) {
@@ -89,13 +96,16 @@ class ScannedCollection: NSObject, Identifiable, Codable, NSCoding {
         self.thumbnail = thumbnail
         self.dateCreated = dateCreated
         
-        if let imageDataArray = coder.decodeObject(forKey: "imageData") as? [Data] {
-            self.images = imageDataArray.compactMap { UIImage(data: $0) }
-        } else {
-            self.images = []
-        }
+        let imageDataArray = coder.decodeObject(forKey: "imageData") as? [Data] ?? []
+        self.imageDataBlobs = imageDataArray
+        self.images = imageDataArray.compactMap { UIImage(data: $0) }
         
         super.init()
+    }
+    
+    func ensureImagesLoaded() {
+        guard images.isEmpty, !imageDataBlobs.isEmpty else { return }
+        images = imageDataBlobs.compactMap { UIImage(data: $0) }
     }
 }
 
@@ -108,7 +118,8 @@ class PDFLibraryService: ObservableObject {
     private let fileManager = FileManager.default
     private let documentsDirectory: URL
     private let foldersKey = "SavedFolders"
-    private let scannedCollectionsKey = "ScannedCollections"
+    private let scannedCollectionsFileName = "scanned_collections.json"
+    private let legacyScannedCollectionsFileName = "scanned_collections.data"
     
     init() {
         documentsDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -420,29 +431,53 @@ extension PDFLibraryService {
         saveScannedCollections()
     }
     
+    func renameScannedCollection(_ collection: ScannedCollection, newName: String) {
+        guard let index = scannedCollections.firstIndex(where: { $0.id == collection.id }) else { return }
+        scannedCollections[index].name = newName
+        saveScannedCollections()
+    }
+    
     private func loadScannedCollections() {
         print("📁 Loading scanned collections...")
-        let fileURL = documentsDirectory.appendingPathComponent("scanned_collections.data")
-        guard let data = try? Data(contentsOf: fileURL) else {
+        let primaryURL = documentsDirectory.appendingPathComponent(scannedCollectionsFileName)
+        
+        if let data = try? Data(contentsOf: primaryURL) {
+            do {
+                let decoder = JSONDecoder()
+                let collections = try decoder.decode([ScannedCollection].self, from: data)
+                scannedCollections = collections
+                print("📁 Loaded \(collections.count) collections from JSON")
+                return
+            } catch {
+                print("📁 Failed to decode JSON collections: \(error)")
+            }
+        }
+        
+        // Fallback to legacy archive if JSON file is missing or corrupted
+        let legacyURL = documentsDirectory.appendingPathComponent(legacyScannedCollectionsFileName)
+        guard let legacyData = try? Data(contentsOf: legacyURL) else {
             print("📁 No saved collections file found")
             return
         }
         
         do {
-            let collections = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? [ScannedCollection] ?? []
-            scannedCollections = collections
-            print("📁 Loaded \(collections.count) collections from file")
+            if let collections = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(legacyData) as? [ScannedCollection] {
+                scannedCollections = collections
+                print("📁 Migrated \(collections.count) collections from legacy archive")
+                saveScannedCollections() // Persist back to JSON for the next launch
+            }
         } catch {
-            print("📁 Failed to decode collections: \(error)")
+            print("📁 Failed to decode legacy collections: \(error)")
         }
     }
     
-    private func saveScannedCollections() {
+    func saveScannedCollections() {
         print("📁 Saving \(scannedCollections.count) collections...")
         do {
-            let data = try NSKeyedArchiver.archivedData(withRootObject: scannedCollections, requiringSecureCoding: false)
-            let fileURL = documentsDirectory.appendingPathComponent("scanned_collections.data")
-            try data.write(to: fileURL)
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(scannedCollections)
+            let fileURL = documentsDirectory.appendingPathComponent(scannedCollectionsFileName)
+            try data.write(to: fileURL, options: .atomic)
             print("📁 Successfully saved collections to file: \(fileURL.path)")
         } catch {
             print("📁 Failed to save scanned collections: \(error)")
